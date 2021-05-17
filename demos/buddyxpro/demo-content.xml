@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/5.7.2" created="2021-05-17 07:38" -->
+	<!-- generator="WordPress/5.7.2" created="2021-05-17 13:50" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>BuddyX Pro Demo</title>
 	<link>https://lms-demos.buddyxtheme.com/buddyx-pro</link>
 	<description>Just another BuddyX LMS Demos Sites site</description>
-	<pubDate>Mon, 17 May 2021 07:38:04 +0000</pubDate>
+	<pubDate>Mon, 17 May 2021 13:50:22 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>https://lms-demos.buddyxtheme.com/</wp:base_site_url>
@@ -183,34 +183,6 @@
 		<wp:term_description><![CDATA[Recipient has registered for an account and site.]]></wp:term_description>
 	</wp:term>
 		<wp:term>
-		<wp:term_id>22</wp:term_id>
-		<wp:term_taxonomy><![CDATA[product_visibility]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[exclude-from-catalog]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[exclude-from-catalog]]></wp:term_name>
-	</wp:term>
-		<wp:term>
-		<wp:term_id>21</wp:term_id>
-		<wp:term_taxonomy><![CDATA[product_visibility]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[exclude-from-search]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[exclude-from-search]]></wp:term_name>
-	</wp:term>
-		<wp:term>
-		<wp:term_id>20</wp:term_id>
-		<wp:term_taxonomy><![CDATA[product_type]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[external]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[external]]></wp:term_name>
-	</wp:term>
-		<wp:term>
-		<wp:term_id>23</wp:term_id>
-		<wp:term_taxonomy><![CDATA[product_visibility]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[featured]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[featured]]></wp:term_name>
-	</wp:term>
-		<wp:term>
 		<wp:term_id>38</wp:term_id>
 		<wp:term_taxonomy><![CDATA[bp-email-type]]></wp:term_taxonomy>
 		<wp:term_slug><![CDATA[friends-request]]></wp:term_slug>
@@ -233,13 +205,6 @@
 		<wp:term_parent><![CDATA[]]></wp:term_parent>
 		<wp:term_name><![CDATA[group-message-email]]></wp:term_name>
 		<wp:term_description><![CDATA[Recipient has received a group message.]]></wp:term_description>
-	</wp:term>
-		<wp:term>
-		<wp:term_id>18</wp:term_id>
-		<wp:term_taxonomy><![CDATA[product_type]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[grouped]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[grouped]]></wp:term_name>
 	</wp:term>
 		<wp:term>
 		<wp:term_id>35</wp:term_id>
@@ -314,48 +279,6 @@
 		<wp:term_description><![CDATA[Recipient has received a private message.]]></wp:term_description>
 	</wp:term>
 		<wp:term>
-		<wp:term_id>24</wp:term_id>
-		<wp:term_taxonomy><![CDATA[product_visibility]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[outofstock]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[outofstock]]></wp:term_name>
-	</wp:term>
-		<wp:term>
-		<wp:term_id>25</wp:term_id>
-		<wp:term_taxonomy><![CDATA[product_visibility]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[rated-1]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[rated-1]]></wp:term_name>
-	</wp:term>
-		<wp:term>
-		<wp:term_id>26</wp:term_id>
-		<wp:term_taxonomy><![CDATA[product_visibility]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[rated-2]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[rated-2]]></wp:term_name>
-	</wp:term>
-		<wp:term>
-		<wp:term_id>27</wp:term_id>
-		<wp:term_taxonomy><![CDATA[product_visibility]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[rated-3]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[rated-3]]></wp:term_name>
-	</wp:term>
-		<wp:term>
-		<wp:term_id>28</wp:term_id>
-		<wp:term_taxonomy><![CDATA[product_visibility]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[rated-4]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[rated-4]]></wp:term_name>
-	</wp:term>
-		<wp:term>
-		<wp:term_id>29</wp:term_id>
-		<wp:term_taxonomy><![CDATA[product_visibility]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[rated-5]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[rated-5]]></wp:term_name>
-	</wp:term>
-		<wp:term>
 		<wp:term_id>45</wp:term_id>
 		<wp:term_taxonomy><![CDATA[bp-email-type]]></wp:term_taxonomy>
 		<wp:term_slug><![CDATA[settings-verify-email-change]]></wp:term_slug>
@@ -364,33 +287,12 @@
 		<wp:term_description><![CDATA[Recipient has changed their email address.]]></wp:term_description>
 	</wp:term>
 		<wp:term>
-		<wp:term_id>17</wp:term_id>
-		<wp:term_taxonomy><![CDATA[product_type]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[simple]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[simple]]></wp:term_name>
-	</wp:term>
-		<wp:term>
-		<wp:term_id>30</wp:term_id>
-		<wp:term_taxonomy><![CDATA[product_cat]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[uncategorized]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[Uncategorized]]></wp:term_name>
-	</wp:term>
-		<wp:term>
 		<wp:term_id>53</wp:term_id>
 		<wp:term_taxonomy><![CDATA[bp-email-type]]></wp:term_taxonomy>
 		<wp:term_slug><![CDATA[user-moderation-email]]></wp:term_slug>
 		<wp:term_parent><![CDATA[]]></wp:term_parent>
 		<wp:term_name><![CDATA[user-moderation-email]]></wp:term_name>
 		<wp:term_description><![CDATA[When a member has been automatically suspended due to reaching the reporting threshold.]]></wp:term_description>
-	</wp:term>
-		<wp:term>
-		<wp:term_id>19</wp:term_id>
-		<wp:term_taxonomy><![CDATA[product_type]]></wp:term_taxonomy>
-		<wp:term_slug><![CDATA[variable]]></wp:term_slug>
-		<wp:term_parent><![CDATA[]]></wp:term_parent>
-		<wp:term_name><![CDATA[variable]]></wp:term_name>
 	</wp:term>
 			<wp:term><wp:term_id>16</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug><![CDATA[main-menu]]></wp:term_slug><wp:term_name><![CDATA[Main Menu]]></wp:term_name>
 </wp:term>
@@ -480,69 +382,117 @@
 		<wp:is_sticky>0</wp:is_sticky>
 														</item>
 					<item>
-		<title><![CDATA[buddyx.WordPress.2021-05-17-1.xml_.txt]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/buddyx-wordpress-2021-05-17-1-xml_-txt/</link>
-		<pubDate>Mon, 17 May 2021 05:56:47 +0000</pubDate>
+		<title><![CDATA[]]></title>
+		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/home/</link>
+		<pubDate>Mon, 17 May 2021 06:02:10 +0000</pubDate>
 		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/buddyx.WordPress.2021-05-17-1.xml_.txt</guid>
+		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/?p=2056</guid>
 		<description></description>
-		<content:encoded><![CDATA[https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/buddyx.WordPress.2021-05-17-1.xml_.txt]]></content:encoded>
+		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>58</wp:post_id>
-		<wp:post_date><![CDATA[2021-05-17 05:56:47]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2021-05-17 05:56:47]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 05:56:47]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 05:56:47]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:post_id>2056</wp:post_id>
+		<wp:post_date><![CDATA[2021-05-17 13:14:12]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2021-05-17 06:02:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2021-05-17 13:14:12]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2021-05-17 13:14:12]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[buddyx-wordpress-2021-05-17-1-xml_-txt]]></wp:post_name>
-		<wp:status><![CDATA[private]]></wp:status>
+		<wp:post_name><![CDATA[home]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:menu_order>1</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/buddyx.WordPress.2021-05-17-1.xml_.txt]]></wp:attachment_url>
-											<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2021/05/buddyx.WordPress.2021-05-17-1.xml_.txt]]></wp:meta_value>
+										<category domain="nav_menu" nicename="main-menu"><![CDATA[Main Menu]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+		<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attachment_context]]></wp:meta_key>
-		<wp:meta_value><![CDATA[import]]></wp:meta_value>
+		<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+		<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1828]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
-		<title><![CDATA[woocommerce-placeholder]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/woocommerce-placeholder/</link>
-		<pubDate>Mon, 17 May 2021 06:00:08 +0000</pubDate>
+		<title><![CDATA[]]></title>
+		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/2057/</link>
+		<pubDate>Mon, 17 May 2021 06:02:10 +0000</pubDate>
 		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/woocommerce-placeholder.png</guid>
+		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/?p=2057</guid>
 		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
+		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2055</wp:post_id>
-		<wp:post_date><![CDATA[2021-05-17 06:00:08]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2021-05-17 06:00:08]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 06:00:08]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 06:00:08]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
+		<wp:post_id>2057</wp:post_id>
+		<wp:post_date><![CDATA[2021-05-17 13:14:12]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2021-05-17 06:02:10]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2021-05-17 13:14:12]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2021-05-17 13:14:12]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[woocommerce-placeholder]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
+		<wp:post_name><![CDATA[2057]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
+		<wp:menu_order>5</wp:menu_order>
+		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/woocommerce-placeholder.png]]></wp:attachment_url>
-											<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-		<wp:meta_value><![CDATA[woocommerce-placeholder.png]]></wp:meta_value>
+										<category domain="nav_menu" nicename="main-menu"><![CDATA[Main Menu]]></category>
+						<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
+		<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
 		</wp:postmeta>
 							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:5:{s:5:"width";i:1200;s:6:"height";i:1200;s:4:"file";s:27:"woocommerce-placeholder.png";s:5:"sizes";a:5:{s:6:"medium";a:4:{s:4:"file";s:35:"woocommerce-placeholder-300x300.png";s:5:"width";i:300;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";}s:5:"large";a:4:{s:4:"file";s:37:"woocommerce-placeholder-1024x1024.png";s:5:"width";i:1024;s:6:"height";i:1024;s:9:"mime-type";s:9:"image/png";}s:9:"thumbnail";a:4:{s:4:"file";s:35:"woocommerce-placeholder-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";}s:12:"medium_large";a:4:{s:4:"file";s:35:"woocommerce-placeholder-768x768.png";s:5:"width";i:768;s:6:"height";i:768;s:9:"mime-type";s:9:"image/png";}s:18:"buddyxpro-featured";a:4:{s:4:"file";s:35:"woocommerce-placeholder-480x480.png";s:5:"width";i:480;s:6:"height";i:480;s:9:"mime-type";s:9:"image/png";}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
+		<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
+		<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
+		<wp:meta_value><![CDATA[206]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
+		<wp:meta_value><![CDATA[]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -1168,835 +1118,6 @@
 			<wp:comment_user_id>1</wp:comment_user_id>
 							</wp:comment>
 					</item>
-					<item>
-		<title><![CDATA[Privacy Policy]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/?page_id=60</link>
-		<pubDate>Fri, 17 Apr 2020 08:27:54 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://pro.buddyxtheme.com/?page_id=3</guid>
-		<description></description>
-		<content:encoded><![CDATA[<!-- wp:heading --><h2>Who we are</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Our website address is: https://pro.buddyxtheme.com.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>What personal data we collect and why we collect it</h2><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>Comments</h3><!-- /wp:heading --><!-- wp:paragraph --><p>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>Media</h3><!-- /wp:heading --><!-- wp:paragraph --><p>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>Contact forms</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>Cookies</h3><!-- /wp:heading --><!-- wp:paragraph --><p>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &quot;Remember Me&quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>Embedded content from other websites</h3><!-- /wp:heading --><!-- wp:paragraph --><p>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>Analytics</h3><!-- /wp:heading --><!-- wp:heading --><h2>Who we share your data with</h2><!-- /wp:heading --><!-- wp:heading --><h2>How long we retain your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>What rights you have over your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Where we send your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Visitor comments may be checked through an automated spam detection service.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Your contact information</h2><!-- /wp:heading --><!-- wp:heading --><h2>Additional information</h2><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>How we protect your data</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>What data breach procedures we have in place</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>What third parties we receive data from</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>What automated decision making and/or profiling we do with user data</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>Industry regulatory disclosure requirements</h3><!-- /wp:heading -->]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>60</wp:post_id>
-		<wp:post_date><![CDATA[2020-04-17 08:27:54]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2020-04-17 08:27:54]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2020-04-17 08:27:54]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2020-04-17 08:27:54]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[privacy-policy]]></wp:post_name>
-		<wp:status><![CDATA[draft]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-		<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-		<wp:meta_value><![CDATA[default]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[Shop]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/shop/</link>
-		<pubDate>Mon, 20 Apr 2020 11:48:38 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://pro.buddyxtheme.com/shop/</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>159</wp:post_id>
-		<wp:post_date><![CDATA[2020-04-20 11:48:38]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2020-04-20 11:48:38]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2020-04-20 11:48:38]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2020-04-20 11:48:38]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[shop]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title><![CDATA[Cart]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/cart/</link>
-		<pubDate>Mon, 20 Apr 2020 11:48:38 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://pro.buddyxtheme.com/cart/</guid>
-		<description></description>
-		<content:encoded><![CDATA[<!-- wp:shortcode -->[woocommerce_cart]<!-- /wp:shortcode -->]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>160</wp:post_id>
-		<wp:post_date><![CDATA[2020-04-20 11:48:38]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2020-04-20 11:48:38]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 06:00:10]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 06:00:10]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[cart]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1621231166]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[Checkout]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/checkout/</link>
-		<pubDate>Mon, 20 Apr 2020 11:48:38 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://pro.buddyxtheme.com/checkout/</guid>
-		<description></description>
-		<content:encoded><![CDATA[<!-- wp:shortcode -->[woocommerce_checkout]<!-- /wp:shortcode -->]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>161</wp:post_id>
-		<wp:post_date><![CDATA[2020-04-20 11:48:38]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2020-04-20 11:48:38]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 06:00:10]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 06:00:10]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[checkout]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1621231167]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[My account]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/my-account/</link>
-		<pubDate>Mon, 20 Apr 2020 11:48:39 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://pro.buddyxtheme.com/my-account/</guid>
-		<description></description>
-		<content:encoded><![CDATA[<!-- wp:shortcode -->[woocommerce_my_account]<!-- /wp:shortcode -->]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>162</wp:post_id>
-		<wp:post_date><![CDATA[2020-04-20 11:48:39]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2020-04-20 11:48:39]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 06:00:10]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 06:00:10]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[my-account]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1621231168]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[Blog]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/blog/</link>
-		<pubDate>Mon, 20 Apr 2020 18:28:08 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://pro.buddyxtheme.com/?page_id=206</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>206</wp:post_id>
-		<wp:post_date><![CDATA[2020-04-20 18:28:08]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2020-04-20 18:28:08]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2020-04-20 18:28:08]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2020-04-20 18:28:08]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[blog]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[Home]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/</link>
-		<pubDate>Sun, 19 Jul 2020 12:21:20 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://pro.buddyxtheme.com/?page_id=1828</guid>
-		<description></description>
-		<content:encoded><![CDATA[<h1>The BuddyX</h1>		
-		Simple, Clean WordPress & BuddyPress Free Theme		
-			<a href="#" role="button">
-						Free Download
-					</a>
-															<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/wordpress.jpg" title="" alt="" />															
-															<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/buddypress.jpg" title="" alt="" />															
-															<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/woocommerce.jpg" title="" alt="" />															
-															<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/wordpress.jpg" title="" alt="" />															
-															<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/buddypress.jpg" title="" alt="" />															
-			<h2>Join Our Community Today!</h2>		
-		Members of your community deserve more.​ We Are A Creative Community With A Passion For Design		
-				<h2>
-					7.242+
-				</h2>
-								<p>Activity List</p>
-				<h2>
-					842+
-				</h2>
-								<p>Online members</p>
-				<h2>
-					485+
-				</h2>
-								<p>Groups of Interests</p>
-				<h2>
-					468+
-				</h2>
-								<p>Topics Created</p>
-				<h2>
-					7.242+
-				</h2>
-								<p>Upcoming Events</p>
-			<h2>Compatible With The Most Popular Plugins</h2>		
-		Lorem Ipsum is simply dummy text of the printing and typesetting industry. 		
-				<h3>
-					BuddyPress
-				</h3>
-								<p>Ut euismod felis vel turpis fringilla rhoncus. Mauris dui libero, vestibulum sit amet est in, pretium lacinia enim.</p>
-				<h3>
-					rtMedia
-				</h3>
-								<p>Sed vel tellus nec sem posuere bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-				<h3>
-					WooCommerce
-				</h3>
-								<p>Praesent tristique porttitor venenatis. Vivamus auctor vestibulum mollis. Maecenas tincidunt, justo id consequat cursus. orci libero sodales.</p>
-				<h3>
-					Elementor
-				</h3>
-								<p>Donec porta nunc vitae magna facilisis accumsan. Phasellus mattis finibus imperdiet. Ut non molestie velit. Nunc volutpat vehicula arcu, rhoncus porta mauris ornare at.</p>
-				<h3>
-					Kirki Toolkit
-				</h3>
-								<p>Curabitur tincidunt erat leo, at mollis eros tincidunt quis. Sed ipsum turpis, ultrices et enim vitae, blandit porttitor neque. Curabitur quis erat vulputate.</p>
-				<h3>
-					More…
-				</h3>
-								<p>Vestibulum et bibendum risus. Vivamus lacus libero, sagittis ac justo id, ultricies sollicitudin quam. Aliquam at urna ligula. Sed ac mattis dolor. Praesent rutrum placerat nibh.</p>
-				<h3>
-					Join a Group or Members
-				</h3>
-								<p>Find common interests and meet new friends in the groups. Join the ones that appeal to what you like.</p>
-				<h3>
-					Start and Awesome Blog
-				</h3>
-								<p>Create a blog in the community to share your thoughts and ideas. Post articles, images and more</p>
-				<h3>
-					Have a Discussion
-				</h3>
-								<p>Start a forum topic or comment on someone elses. Share ideas and get community feedback.</p>
-				<h3>
-					Share with Friends
-				</h3>
-								<p>Make status updates to your friends and more with posts, images, videos and links.</p>
-															<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/middle-img.jpg" title="" alt="" />															
-			<h2>Build Your Site Free For Today!</h2>		
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.		
-			<a href="#" role="button">
-						Free Download
-					</a>
-			<h2>Customer Ratings</h2>		
-		Lorem Ipsum is simply dummy text of the printing and typesetting industry. 		
-							I have been working with these guys since years now! With lots of hard work and timely communication they made sure they delivered the best to me. Highly recommended!
-							<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/user.jpg" title="" alt="" />						
-														John Doe
-																						Designer
-							I have been working with these guys since years now! With lots of hard work and timely communication they made sure they delivered the best to me. Highly recommended!
-							<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/user.jpg" title="" alt="" />						
-														John Doe
-																						Designer
-							I have been working with these guys since years now! With lots of hard work and timely communication they made sure they delivered the best to me. Highly recommended!
-							<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/user.jpg" title="" alt="" />						
-														John Doe
-																						Designer
-			<h2>Get started in no time</h2>		
-		Lorem Ipsum is simply dummy text of the printing and typesetting industry. 		
-			<a href="#" role="button">
-						  Free Download Theme
-					</a>
-			<h2>Recents Update</h2>		
-		Praesent tristique porttitor venenatis. Vivamus auctor vestibulum mollis. Maecenas tincidunt, justo id consequat cursus, orci libero sodales ex, id lacinia sem sapien ac lacus. Aliquam ut ante eu purus aliquam lacinia quis in nisi.		
-			<figure><img width="900" height="600" src="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-3-min.jpg" alt="" loading="lazy" srcset="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-3-min.jpg 900w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-3-min-300x200.jpg 300w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-3-min-768x512.jpg 768w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-3-min-720x480.jpg 720w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-3-min-600x400.jpg 600w" sizes="(min-width: 960px) 75vw, 100vw" /></figure><h3>What’s next after US The pulls out</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>		
-			<figure><a href="#"><img width="900" height="600" src="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-2-min.jpg" alt="" loading="lazy" srcset="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-2-min.jpg 900w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-2-min-300x200.jpg 300w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-2-min-768x512.jpg 768w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-2-min-720x480.jpg 720w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-2-min-600x400.jpg 600w" sizes="(min-width: 960px) 75vw, 100vw" /></a></figure><h3><a href="#">Adidas expects normalis strong growth</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>		
-			<figure><a href="#"><img width="900" height="600" src="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-1-min.jpg" alt="" loading="lazy" srcset="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-1-min.jpg 900w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-1-min-300x200.jpg 300w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-1-min-768x512.jpg 768w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-1-min-720x480.jpg 720w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-1-min-600x400.jpg 600w" sizes="(min-width: 960px) 75vw, 100vw" /></a></figure><h3><a href="#">What is Worse than Youtube Rewind</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>		
-			<figure><a href="#"><img width="900" height="600" src="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-13-min.jpg" alt="" loading="lazy" srcset="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-13-min.jpg 900w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-13-min-300x200.jpg 300w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-13-min-768x512.jpg 768w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-13-min-720x480.jpg 720w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-13-min-600x400.jpg 600w" sizes="(min-width: 960px) 75vw, 100vw" /></a></figure><h3><a href="#">Don’t Make a Three-Parent Baby</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>1828</wp:post_id>
-		<wp:post_date><![CDATA[2020-07-19 12:21:20]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2020-07-19 12:21:20]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 06:27:26]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 06:27:26]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[home]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-		<wp:meta_value><![CDATA[elementor_header_footer]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_edit_mode]]></wp:meta_key>
-		<wp:meta_value><![CDATA[builder]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_template_type]]></wp:meta_key>
-		<wp:meta_value><![CDATA[wp-page]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_version]]></wp:meta_key>
-		<wp:meta_value><![CDATA[3.2.3]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_data]]></wp:meta_key>
-		<wp:meta_value><![CDATA[[{"id":"3764fa15","elType":"section","settings":{"stretch_section":"section-stretched","height":"min-height","background_background":"classic","background_image":{"id":1830,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/header-bg.jpg"},"background_position":"center center","background_attachment":"scroll","background_repeat":"no-repeat","background_size":"cover","custom_height":{"unit":"px","size":500,"sizes":[]},"custom_height_tablet":{"unit":"px","size":300,"sizes":[]}},"elements":[{"id":"51b67a54","elType":"column","settings":{"_column_size":100,"_inline_size":null},"elements":[{"id":"2e5f039f","elType":"widget","settings":{"title":"The BuddyX","header_size":"h1","align":"center","title_color":"#FFFFFF"},"elements":[],"widgetType":"heading"},{"id":"5d34d272","elType":"widget","settings":{"editor":"Simple, Clean WordPress & BuddyPress Free Theme","align":"center","text_color":"#FFFFFF"},"elements":[],"widgetType":"text-editor"},{"id":"7c42c62a","elType":"widget","settings":{"text":"Free Download","align":"center","size":"md","button_text_color":"#FFFFFF","background_color":"#EF5455"},"elements":[],"widgetType":"button"}],"isInner":false}],"isInner":false},{"id":"2f35b9da","elType":"section","settings":{"stretch_section":"section-stretched","structure":"50","background_background":"classic","background_color":"#FFFFFF"},"elements":[{"id":"141d67dd","elType":"column","settings":{"_column_size":20,"_inline_size":null,"_inline_size_mobile":50},"elements":[{"id":"10ecb953","elType":"widget","settings":{"image":{"id":1831,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/wordpress.jpg"},"width":{"unit":"%","size":80,"sizes":[]}},"elements":[],"widgetType":"image"}],"isInner":false},{"id":"4a8aa667","elType":"column","settings":{"_column_size":20,"_inline_size":null,"_inline_size_mobile":50},"elements":[{"id":"479b2b53","elType":"widget","settings":{"image":{"id":1832,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/buddypress.jpg"},"width":{"unit":"%","size":80,"sizes":[]}},"elements":[],"widgetType":"image"}],"isInner":false},{"id":"170f8c3f","elType":"column","settings":{"_column_size":20,"_inline_size":null,"_inline_size_mobile":50},"elements":[{"id":"52306bcb","elType":"widget","settings":{"image":{"id":1833,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/woocommerce.jpg"},"width":{"unit":"%","size":80,"sizes":[]}},"elements":[],"widgetType":"image"}],"isInner":false},{"id":"70e2d7","elType":"column","settings":{"_column_size":20,"_inline_size":null,"_inline_size_mobile":50},"elements":[{"id":"92a9aee","elType":"widget","settings":{"image":{"id":1831,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/wordpress.jpg"},"width":{"unit":"%","size":80,"sizes":[]}},"elements":[],"widgetType":"image"}],"isInner":false},{"id":"6cc04c9b","elType":"column","settings":{"_column_size":20,"_inline_size":null,"_inline_size_mobile":50,"hide_mobile":"hidden-phone"},"elements":[{"id":"7ccd7919","elType":"widget","settings":{"image":{"id":1832,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/buddypress.jpg"},"width":{"unit":"%","size":80,"sizes":[]}},"elements":[],"widgetType":"image"}],"isInner":false}],"isInner":false},{"id":"4e2258d4","elType":"section","settings":{"stretch_section":"section-stretched","margin":{"unit":"px","top":"70","right":0,"bottom":"70","left":0,"isLinked":true}},"elements":[{"id":"76b6f7b0","elType":"column","settings":{"_column_size":100,"_inline_size":null},"elements":[{"id":"7564450e","elType":"widget","settings":{"title":"Join Our Community Today!","align":"center"},"elements":[],"widgetType":"heading"},{"id":"11fe57d4","elType":"widget","settings":{"editor":"Members of your community deserve more.\u200b We Are A Creative Community With A Passion For Design","align":"center"},"elements":[],"widgetType":"text-editor"},{"id":"703ef8af","elType":"section","settings":{"structure":"50","margin":{"unit":"px","top":"10","right":0,"bottom":"0","left":0,"isLinked":false}},"elements":[{"id":"1cc177f9","elType":"column","settings":{"_column_size":20,"_inline_size":null},"elements":[{"id":"7eb04d31","elType":"widget","settings":{"selected_icon":{"value":"far fa-bell","library":"fa-regular"},"title_text":"7.242+","description_text":"Activity List","title_size":"h2","primary_color":"#EF5455","icon_space":{"unit":"px","size":10,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]},"title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":32,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"62087d91","elType":"column","settings":{"_column_size":20,"_inline_size":null},"elements":[{"id":"73cb2729","elType":"widget","settings":{"selected_icon":{"value":"far fa-user","library":"fa-regular"},"title_text":"842+","description_text":"Online members","title_size":"h2","primary_color":"#EF5455","icon_space":{"unit":"px","size":10,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]},"title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":32,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"74698e23","elType":"column","settings":{"_column_size":20,"_inline_size":null},"elements":[{"id":"52503d0b","elType":"widget","settings":{"selected_icon":{"value":"fas fa-users","library":"fa-solid"},"title_text":"485+","description_text":"Groups of Interests","title_size":"h2","primary_color":"#EF5455","icon_space":{"unit":"px","size":10,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]},"title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":32,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"212cf2c7","elType":"column","settings":{"_column_size":20,"_inline_size":null},"elements":[{"id":"31b989bf","elType":"widget","settings":{"selected_icon":{"value":"far fa-comments","library":"fa-regular"},"title_text":"468+","description_text":"Topics Created","title_size":"h2","primary_color":"#EF5455","icon_space":{"unit":"px","size":10,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]},"title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":32,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"68bb4107","elType":"column","settings":{"_column_size":20,"_inline_size":null},"elements":[{"id":"2286dd82","elType":"widget","settings":{"selected_icon":{"value":"far fa-calendar-alt","library":"fa-regular"},"title_text":"7.242+","description_text":"Upcoming Events","title_size":"h2","primary_color":"#EF5455","icon_space":{"unit":"px","size":10,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]},"title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":32,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true}],"isInner":true}],"isInner":false}],"isInner":false},{"id":"60cc6c5","elType":"section","settings":{"stretch_section":"section-stretched"},"elements":[{"id":"4a114304","elType":"column","settings":{"_column_size":100,"_inline_size":null},"elements":[{"id":"8c97c7e","elType":"widget","settings":{"title":"Compatible With The Most Popular Plugins","align":"center"},"elements":[],"widgetType":"heading"},{"id":"5906c76","elType":"widget","settings":{"editor":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ","align":"center"},"elements":[],"widgetType":"text-editor"},{"id":"1d3ebf23","elType":"section","settings":{"structure":"30"},"elements":[{"id":"404583f9","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"40","right":"30","bottom":"40","left":"30","isLinked":false}},"elements":[{"id":"450d5088","elType":"widget","settings":{"selected_icon":{"value":"fas fa-user","library":"fa-solid"},"title_text":"BuddyPress","description_text":"Ut euismod felis vel turpis fringilla rhoncus. Mauris dui libero, vestibulum sit amet est in, pretium lacinia enim.","primary_color":"#EF5455","icon_size":{"unit":"px","size":40,"sizes":[]},"title_bottom_space":{"unit":"px","size":12,"sizes":[]},"title_typography_typography":"custom"},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"7a829a78","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"40","right":"30","bottom":"40","left":"30","isLinked":false}},"elements":[{"id":"18b27411","elType":"widget","settings":{"title_text":"rtMedia","description_text":"Sed vel tellus nec sem posuere bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. ","primary_color":"#EF5455","icon_size":{"unit":"px","size":40,"sizes":[]},"title_bottom_space":{"unit":"px","size":12,"sizes":[]},"title_typography_typography":"custom"},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"46c9e40d","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"40","right":"30","bottom":"40","left":"30","isLinked":false}},"elements":[{"id":"7f3d83b2","elType":"widget","settings":{"title_text":"WooCommerce","description_text":"Praesent tristique porttitor venenatis. Vivamus auctor vestibulum mollis. Maecenas tincidunt, justo id consequat cursus. orci libero sodales.","primary_color":"#EF5455","icon_size":{"unit":"px","size":40,"sizes":[]},"title_bottom_space":{"unit":"px","size":12,"sizes":[]},"title_typography_typography":"custom"},"elements":[],"widgetType":"icon-box"}],"isInner":true}],"isInner":true},{"id":"7593faa7","elType":"section","settings":{"structure":"30"},"elements":[{"id":"3597fa60","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"40","right":"30","bottom":"40","left":"30","isLinked":false}},"elements":[{"id":"727c3292","elType":"widget","settings":{"selected_icon":{"value":"fas fa-user","library":"fa-solid"},"title_text":"Elementor","description_text":"Donec porta nunc vitae magna facilisis accumsan. Phasellus mattis finibus imperdiet. Ut non molestie velit. Nunc volutpat vehicula arcu, rhoncus porta mauris ornare at.","primary_color":"#EF5455","icon_size":{"unit":"px","size":40,"sizes":[]},"title_bottom_space":{"unit":"px","size":12,"sizes":[]},"title_typography_typography":"custom"},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"6cea389d","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"40","right":"30","bottom":"40","left":"30","isLinked":false}},"elements":[{"id":"513b19fe","elType":"widget","settings":{"title_text":"Kirki Toolkit","description_text":"Curabitur tincidunt erat leo, at mollis eros tincidunt quis. Sed ipsum turpis, ultrices et enim vitae, blandit porttitor neque. Curabitur quis erat vulputate.","primary_color":"#EF5455","icon_size":{"unit":"px","size":40,"sizes":[]},"title_bottom_space":{"unit":"px","size":12,"sizes":[]},"title_typography_typography":"custom"},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"371321d1","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"40","right":"30","bottom":"40","left":"30","isLinked":false}},"elements":[{"id":"7a0593ee","elType":"widget","settings":{"title_text":"More\u2026","description_text":"Vestibulum et bibendum risus. Vivamus lacus libero, sagittis ac justo id, ultricies sollicitudin quam. Aliquam at urna ligula. Sed ac mattis dolor. Praesent rutrum placerat nibh.","primary_color":"#EF5455","icon_size":{"unit":"px","size":40,"sizes":[]},"title_bottom_space":{"unit":"px","size":12,"sizes":[]},"title_typography_typography":"custom"},"elements":[],"widgetType":"icon-box"}],"isInner":true}],"isInner":true}],"isInner":false}],"isInner":false},{"id":"4f611350","elType":"section","settings":{"stretch_section":"section-stretched","structure":"20","margin":{"unit":"px","top":"50","right":0,"bottom":"0","left":0,"isLinked":false}},"elements":[{"id":"3980a42a","elType":"column","settings":{"_column_size":50,"_inline_size":55},"elements":[{"id":"25995a2d","elType":"section","settings":{"margin":{"unit":"px","top":"0","right":0,"bottom":"10","left":0,"isLinked":false}},"elements":[{"id":"6f4db397","elType":"column","settings":{"_column_size":100,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","border_border":"solid","border_width":{"unit":"px","top":"1","right":"1","bottom":"1","left":"1","isLinked":true},"border_color":"#ECF0F1","border_radius":{"unit":"px","top":"5","right":"5","bottom":"5","left":"5","isLinked":true},"margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"padding":{"unit":"px","top":"25","right":"25","bottom":"25","left":"25","isLinked":true}},"elements":[{"id":"1215338b","elType":"widget","settings":{"title_text":"Join a Group or Members","description_text":"Find common interests and meet new friends in the groups. Join the ones that appeal to what you like.","position":"left","primary_color":"#333333","icon_space":{"unit":"px","size":20,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true}],"isInner":true},{"id":"22821358","elType":"section","settings":{"margin":{"unit":"px","top":"10","right":0,"bottom":"10","left":0,"isLinked":true}},"elements":[{"id":"65098568","elType":"column","settings":{"_column_size":100,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","border_border":"solid","border_width":{"unit":"px","top":"1","right":"1","bottom":"1","left":"1","isLinked":true},"border_color":"#ECF0F1","border_radius":{"unit":"px","top":"5","right":"5","bottom":"5","left":"5","isLinked":true},"margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"padding":{"unit":"px","top":"25","right":"25","bottom":"25","left":"25","isLinked":true}},"elements":[{"id":"24549d1f","elType":"widget","settings":{"selected_icon":{"value":"fab fa-wordpress-simple","library":"fa-brands"},"title_text":"Start and Awesome Blog","description_text":"Create a blog in the community to share your thoughts and ideas. Post articles, images and more","position":"left","primary_color":"#333333","icon_space":{"unit":"px","size":20,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true}],"isInner":true},{"id":"67c1c64","elType":"section","settings":{"margin":{"unit":"px","top":"10","right":0,"bottom":"10","left":0,"isLinked":true}},"elements":[{"id":"5649a93d","elType":"column","settings":{"_column_size":100,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","border_border":"solid","border_width":{"unit":"px","top":"1","right":"1","bottom":"1","left":"1","isLinked":true},"border_color":"#ECF0F1","border_radius":{"unit":"px","top":"5","right":"5","bottom":"5","left":"5","isLinked":true},"margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"padding":{"unit":"px","top":"25","right":"25","bottom":"25","left":"25","isLinked":true}},"elements":[{"id":"5d60d4d0","elType":"widget","settings":{"selected_icon":{"value":"fas fa-comments","library":"fa-solid"},"title_text":"Have a Discussion","description_text":"Start a forum topic or comment on someone elses. Share ideas and get community feedback.","position":"left","primary_color":"#333333","icon_space":{"unit":"px","size":20,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true}],"isInner":true},{"id":"7f58ccbf","elType":"section","settings":{"margin":{"unit":"px","top":"10","right":0,"bottom":"10","left":0,"isLinked":true}},"elements":[{"id":"fb3bf74","elType":"column","settings":{"_column_size":100,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","border_border":"solid","border_width":{"unit":"px","top":"1","right":"1","bottom":"1","left":"1","isLinked":true},"border_color":"#ECF0F1","border_radius":{"unit":"px","top":"5","right":"5","bottom":"5","left":"5","isLinked":true},"margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"padding":{"unit":"px","top":"25","right":"25","bottom":"25","left":"25","isLinked":true}},"elements":[{"id":"176eebad","elType":"widget","settings":{"selected_icon":{"value":"fas fa-share","library":"fa-solid"},"title_text":"Share with Friends","description_text":"Make status updates to your friends and more with posts, images, videos and links.","position":"left","primary_color":"#333333","icon_space":{"unit":"px","size":20,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true}],"isInner":true}],"isInner":false},{"id":"3b937592","elType":"column","settings":{"_column_size":50,"_inline_size":44.956},"elements":[{"id":"f293910","elType":"widget","settings":{"image":{"id":1834,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/middle-img.jpg"}},"elements":[],"widgetType":"image"}],"isInner":false}],"isInner":false},{"id":"4c3cf97a","elType":"section","settings":{"content_position":"middle","structure":"20","background_background":"classic","background_color":"#FFFFFF","border_radius":{"unit":"px","top":"3","right":"3","bottom":"3","left":"3","isLinked":true},"box_shadow_box_shadow_type":"yes","box_shadow_box_shadow":{"horizontal":0,"vertical":0,"blur":20,"spread":0,"color":"rgba(0, 0, 0, 0.05)"},"margin":{"unit":"px","top":"50","right":0,"bottom":"50","left":0,"isLinked":true},"padding":{"unit":"px","top":"30","right":"30","bottom":"30","left":"30","isLinked":true}},"elements":[{"id":"3d3fc6fe","elType":"column","settings":{"_column_size":50,"_inline_size":69.912},"elements":[{"id":"78d27153","elType":"widget","settings":{"title":"Build Your Site Free For Today!"},"elements":[],"widgetType":"heading"},{"id":"38c13c87","elType":"widget","settings":{"editor":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."},"elements":[],"widgetType":"text-editor"}],"isInner":false},{"id":"18e03e17","elType":"column","settings":{"_column_size":50,"_inline_size":30.044},"elements":[{"id":"65081ac6","elType":"widget","settings":{"text":"Free Download","align":"right","align_mobile":"left","size":"md","button_text_color":"#FFFFFF","background_color":"#EF5455","border_radius":{"unit":"px","top":"3","right":"3","bottom":"3","left":"3","isLinked":true}},"elements":[],"widgetType":"button"}],"isInner":false}],"isInner":false},{"id":"133d0cde","elType":"section","settings":[],"elements":[{"id":"47efaab2","elType":"column","settings":{"_column_size":100,"_inline_size":null},"elements":[{"id":"36bac4a2","elType":"widget","settings":{"title":"Customer Ratings","align":"center"},"elements":[],"widgetType":"heading"},{"id":"5d30b3c7","elType":"widget","settings":{"editor":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ","align":"center"},"elements":[],"widgetType":"text-editor"},{"id":"27a0e249","elType":"section","settings":{"structure":"30"},"elements":[{"id":"5f3c1820","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"30","right":"30","bottom":"30","left":"30","isLinked":true}},"elements":[{"id":"54ac5a6e","elType":"widget","settings":{"testimonial_content":"I have been working with these guys since years now! With lots of hard work and timely communication they made sure they delivered the best to me. Highly recommended!","testimonial_image":{"id":1835,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/user.jpg"},"testimonial_name":"John Doe","testimonial_job":"Designer","content_typography_typography":"custom","content_typography_font_size":{"unit":"px","size":16,"sizes":[]},"image_size":{"unit":"px","size":48,"sizes":[]},"name_typography_typography":"custom","name_typography_font_size":{"unit":"px","size":16,"sizes":[]},"job_typography_typography":"custom","job_typography_font_size":{"unit":"px","size":14,"sizes":[]},"job_typography_font_style":"italic"},"elements":[],"widgetType":"testimonial"}],"isInner":true},{"id":"5eb46d50","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"30","right":"30","bottom":"30","left":"30","isLinked":true}},"elements":[{"id":"5d39cd64","elType":"widget","settings":{"testimonial_content":"I have been working with these guys since years now! With lots of hard work and timely communication they made sure they delivered the best to me. Highly recommended!","testimonial_image":{"id":1835,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/user.jpg"},"testimonial_name":"John Doe","testimonial_job":"Designer","content_typography_typography":"custom","content_typography_font_size":{"unit":"px","size":16,"sizes":[]},"image_size":{"unit":"px","size":48,"sizes":[]},"name_typography_typography":"custom","name_typography_font_size":{"unit":"px","size":16,"sizes":[]},"job_typography_typography":"custom","job_typography_font_size":{"unit":"px","size":14,"sizes":[]},"job_typography_font_style":"italic"},"elements":[],"widgetType":"testimonial"}],"isInner":true},{"id":"4a15231a","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"30","right":"30","bottom":"30","left":"30","isLinked":true}},"elements":[{"id":"61fa5cb4","elType":"widget","settings":{"testimonial_content":"I have been working with these guys since years now! With lots of hard work and timely communication they made sure they delivered the best to me. Highly recommended!","testimonial_image":{"id":1835,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/user.jpg"},"testimonial_name":"John Doe","testimonial_job":"Designer","content_typography_typography":"custom","content_typography_font_size":{"unit":"px","size":16,"sizes":[]},"image_size":{"unit":"px","size":48,"sizes":[]},"name_typography_typography":"custom","name_typography_font_size":{"unit":"px","size":16,"sizes":[]},"job_typography_typography":"custom","job_typography_font_size":{"unit":"px","size":14,"sizes":[]},"job_typography_font_style":"italic"},"elements":[],"widgetType":"testimonial"}],"isInner":true}],"isInner":true}],"isInner":false}],"isInner":false},{"id":"57c17cba","elType":"section","settings":{"stretch_section":"section-stretched","background_background":"classic","background_color":"#EF5455","margin":{"unit":"px","top":"50","right":0,"bottom":"50","left":0,"isLinked":true},"padding":{"unit":"px","top":"50","right":"0","bottom":"50","left":"0","isLinked":false}},"elements":[{"id":"4aa090f0","elType":"column","settings":{"_column_size":100,"_inline_size":100,"space_between_widgets":15},"elements":[{"id":"77378d5d","elType":"widget","settings":{"title":"Get started in no time","align":"center","title_color":"#FFFFFF"},"elements":[],"widgetType":"heading"},{"id":"7820ee92","elType":"widget","settings":{"editor":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ","align":"center","text_color":"#FFFFFF"},"elements":[],"widgetType":"text-editor"},{"id":"6aa2e0ee","elType":"widget","settings":{"text":"  Free Download Theme","align":"center","size":"md","button_text_color":"#EF5455","background_color":"#FFFFFF"},"elements":[],"widgetType":"button"}],"isInner":false}],"isInner":false},{"id":"7f7af56d","elType":"section","settings":{"stretch_section":"section-stretched"},"elements":[{"id":"6393e9e6","elType":"column","settings":{"_column_size":100,"_inline_size":null},"elements":[{"id":"20b11a70","elType":"widget","settings":{"title":"Recents Update","align":"center"},"elements":[],"widgetType":"heading"},{"id":"4ef9f85","elType":"widget","settings":{"editor":"Praesent tristique porttitor venenatis. Vivamus auctor vestibulum mollis. Maecenas tincidunt, justo id consequat cursus, orci libero sodales ex, id lacinia sem sapien ac lacus. Aliquam ut ante eu purus aliquam lacinia quis in nisi.","align":"center"},"elements":[],"widgetType":"text-editor"}],"isInner":false}],"isInner":false},{"id":"288e654","elType":"section","settings":{"structure":"40"},"elements":[{"id":"bc92e26","elType":"column","settings":{"_column_size":25,"_inline_size":null},"elements":[{"id":"9313b96","elType":"widget","settings":{"image":{"url":"https:\/\/lms-demos.buddyxtheme.com\/buddyx-pro\/wp-content\/uploads\/sites\/12\/2021\/05\/blog-img-3-min.jpg","id":2065},"title_text":"What\u2019s next after US The pulls out","description_text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.","image_space":{"unit":"px","size":5,"sizes":[]},"image_size":{"unit":"%","size":100,"sizes":[]},"text_align":"left","title_bottom_space":{"unit":"px","size":10,"sizes":[]}},"elements":[],"widgetType":"image-box"}],"isInner":false},{"id":"a27fbc6","elType":"column","settings":{"_column_size":25,"_inline_size":null},"elements":[{"id":"f368659","elType":"widget","settings":{"image":{"url":"https:\/\/lms-demos.buddyxtheme.com\/buddyx-pro\/wp-content\/uploads\/sites\/12\/2021\/05\/blog-img-2-min.jpg","id":2064},"title_text":"Adidas expects normalis strong growth","description_text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.","link":{"url":"#","is_external":"","nofollow":"","custom_attributes":""},"image_space":{"unit":"px","size":5,"sizes":[]},"image_size":{"unit":"%","size":100,"sizes":[]},"text_align":"left","title_bottom_space":{"unit":"px","size":10,"sizes":[]}},"elements":[],"widgetType":"image-box"}],"isInner":false},{"id":"9f5fa70","elType":"column","settings":{"_column_size":25,"_inline_size":null},"elements":[{"id":"49c234c","elType":"widget","settings":{"image":{"url":"https:\/\/lms-demos.buddyxtheme.com\/buddyx-pro\/wp-content\/uploads\/sites\/12\/2021\/05\/blog-img-1-min.jpg","id":2063},"title_text":"What is Worse than Youtube Rewind","description_text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.","link":{"url":"#","is_external":"","nofollow":"","custom_attributes":""},"image_space":{"unit":"px","size":5,"sizes":[]},"image_size":{"unit":"%","size":100,"sizes":[]},"text_align":"left","title_bottom_space":{"unit":"px","size":10,"sizes":[]}},"elements":[],"widgetType":"image-box"}],"isInner":false},{"id":"37b1c01","elType":"column","settings":{"_column_size":25,"_inline_size":null},"elements":[{"id":"7cba523","elType":"widget","settings":{"image":{"url":"https:\/\/lms-demos.buddyxtheme.com\/buddyx-pro\/wp-content\/uploads\/sites\/12\/2021\/05\/blog-img-13-min.jpg","id":2062},"title_text":"Don\u2019t Make a Three-Parent Baby","description_text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.","link":{"url":"#","is_external":"","nofollow":"","custom_attributes":""},"image_space":{"unit":"px","size":5,"sizes":[]},"image_size":{"unit":"%","size":100,"sizes":[]},"text_align":"left","title_bottom_space":{"unit":"px","size":10,"sizes":[]}},"elements":[],"widgetType":"image-box"}],"isInner":false}],"isInner":false}]]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[eael_transient_elements]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_elementor_controls_usage]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:9:{s:7:"heading";a:3:{s:5:"count";i:7;s:15:"control_percent";i:1;s:8:"controls";a:2:{s:7:"content";a:1:{s:13:"section_title";a:3:{s:5:"title";i:7;s:11:"header_size";i:1;s:5:"align";i:6;}}s:5:"style";a:1:{s:19:"section_title_style";a:1:{s:11:"title_color";i:2;}}}}s:11:"text-editor";a:3:{s:5:"count";i:7;s:15:"control_percent";i:1;s:8:"controls";a:2:{s:7:"content";a:1:{s:14:"section_editor";a:1:{s:6:"editor";i:7;}}s:5:"style";a:1:{s:13:"section_style";a:2:{s:5:"align";i:6;s:10:"text_color";i:2;}}}}s:6:"button";a:3:{s:5:"count";i:3;s:15:"control_percent";i:1;s:8:"controls";a:2:{s:7:"content";a:1:{s:14:"section_button";a:4:{s:4:"text";i:3;s:5:"align";i:3;s:4:"size";i:3;s:12:"align_mobile";i:1;}}s:5:"style";a:1:{s:13:"section_style";a:3:{s:17:"button_text_color";i:3;s:16:"background_color";i:3;s:13:"border_radius";i:1;}}}}s:6:"column";a:3:{s:5:"count";i:37;s:15:"control_percent";i:0;s:8:"controls";a:3:{s:6:"layout";a:1:{s:6:"layout";a:3:{s:12:"_inline_size";i:37;s:19:"_inline_size_mobile";i:5;s:21:"space_between_widgets";i:1;}}s:8:"advanced";a:2:{s:19:"_section_responsive";a:1:{s:11:"hide_mobile";i:1;}s:16:"section_advanced";a:2:{s:6:"margin";i:13;s:7:"padding";i:13;}}s:5:"style";a:2:{s:13:"section_style";a:2:{s:21:"background_background";i:13;s:16:"background_color";i:13;}s:14:"section_border";a:4:{s:13:"border_border";i:4;s:12:"border_width";i:4;s:12:"border_color";i:4;s:13:"border_radius";i:4;}}}}s:7:"section";a:3:{s:5:"count";i:18;s:15:"control_percent";i:0;s:8:"controls";a:3:{s:6:"layout";a:2:{s:14:"section_layout";a:5:{s:15:"stretch_section";i:7;s:6:"height";i:1;s:13:"custom_height";i:1;s:20:"custom_height_tablet";i:1;s:16:"content_position";i:1;}s:17:"section_structure";a:1:{s:9:"structure";i:8;}}s:5:"style";a:2:{s:18:"section_background";a:7:{s:21:"background_background";i:4;s:16:"background_image";i:1;s:19:"background_position";i:1;s:21:"background_attachment";i:1;s:17:"background_repeat";i:1;s:15:"background_size";i:1;s:16:"background_color";i:3;}s:14:"section_border";a:3:{s:13:"border_radius";i:1;s:26:"box_shadow_box_shadow_type";i:1;s:21:"box_shadow_box_shadow";i:1;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:2:{s:6:"margin";i:9;s:7:"padding";i:2;}}}}s:5:"image";a:3:{s:5:"count";i:6;s:15:"control_percent";i:0;s:8:"controls";a:2:{s:7:"content";a:1:{s:13:"section_image";a:1:{s:5:"image";i:6;}}s:5:"style";a:1:{s:19:"section_style_image";a:1:{s:5:"width";i:5;}}}}s:8:"icon-box";a:3:{s:5:"count";i:15;s:15:"control_percent";i:3;s:8:"controls";a:2:{s:7:"content";a:1:{s:12:"section_icon";a:5:{s:13:"selected_icon";i:10;s:10:"title_text";i:15;s:16:"description_text";i:15;s:10:"title_size";i:5;s:8:"position";i:4;}}s:5:"style";a:2:{s:18:"section_style_icon";a:3:{s:13:"primary_color";i:15;s:10:"icon_space";i:9;s:9:"icon_size";i:15;}s:21:"section_style_content";a:3:{s:18:"title_bottom_space";i:15;s:27:"title_typography_typography";i:11;s:26:"title_typography_font_size";i:5;}}}}s:11:"testimonial";a:3:{s:5:"count";i:3;s:15:"control_percent";i:3;s:8:"controls";a:2:{s:7:"content";a:1:{s:19:"section_testimonial";a:2:{s:19:"testimonial_content";i:3;s:17:"testimonial_image";i:3;}}s:5:"style";a:4:{s:33:"section_style_testimonial_content";a:2:{s:29:"content_typography_typography";i:3;s:28:"content_typography_font_size";i:3;}s:31:"section_style_testimonial_image";a:1:{s:10:"image_size";i:3;}s:30:"section_style_testimonial_name";a:2:{s:26:"name_typography_typography";i:3;s:25:"name_typography_font_size";i:3;}s:29:"section_style_testimonial_job";a:3:{s:25:"job_typography_typography";i:3;s:24:"job_typography_font_size";i:3;s:25:"job_typography_font_style";i:3;}}}}s:9:"image-box";a:3:{s:5:"count";i:4;s:15:"control_percent";i:2;s:8:"controls";a:2:{s:7:"content";a:1:{s:13:"section_image";a:3:{s:5:"image";i:4;s:10:"title_text";i:4;s:4:"link";i:3;}}s:5:"style";a:2:{s:19:"section_style_image";a:2:{s:11:"image_space";i:4;s:10:"image_size";i:4;}s:21:"section_style_content";a:2:{s:10:"text_align";i:4;s:18:"title_bottom_space";i:4;}}}}}]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/home/</link>
-		<pubDate>Mon, 17 May 2021 06:02:10 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/?p=2056</guid>
-		<description></description>
-		<content:encoded><![CDATA[ ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2056</wp:post_id>
-		<wp:post_date><![CDATA[2021-05-17 07:35:53]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2021-05-17 06:02:10]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 07:35:53]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 07:35:53]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[home]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>1</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="nav_menu" nicename="main-menu"><![CDATA[Main Menu]]></category>
-						<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-		<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-		<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1828]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/2057/</link>
-		<pubDate>Mon, 17 May 2021 06:02:10 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/?p=2057</guid>
-		<description></description>
-		<content:encoded><![CDATA[ ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2057</wp:post_id>
-		<wp:post_date><![CDATA[2021-05-17 07:35:53]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2021-05-17 06:02:10]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 07:35:53]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 07:35:53]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[2057]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>5</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="nav_menu" nicename="main-menu"><![CDATA[Main Menu]]></category>
-						<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-		<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-		<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-		<wp:meta_value><![CDATA[206]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[News Feed]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/?page_id=2113</link>
-		<pubDate>Mon, 17 May 2021 07:34:53 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/news-feed/</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2113</wp:post_id>
-		<wp:post_date><![CDATA[2021-05-17 07:34:53]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2021-05-17 07:34:53]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 07:37:46]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 07:37:46]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[news-feed__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1621237066]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-		<wp:meta_value><![CDATA[news-feed]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[Members]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/?page_id=2114</link>
-		<pubDate>Mon, 17 May 2021 07:34:53 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/members/</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2114</wp:post_id>
-		<wp:post_date><![CDATA[2021-05-17 07:34:53]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2021-05-17 07:34:53]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 07:37:46]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 07:37:46]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[members__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1621237066]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-		<wp:meta_value><![CDATA[members]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[Terms of Service]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/terms-of-service/</link>
-		<pubDate>Mon, 17 May 2021 07:34:53 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/terms-of-service/</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2115</wp:post_id>
-		<wp:post_date><![CDATA[2021-05-17 07:34:53]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2021-05-17 07:34:53]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 07:34:53]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 07:34:53]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[terms-of-service]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title><![CDATA[Groups]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/?page_id=2138</link>
-		<pubDate>Mon, 17 May 2021 07:35:13 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/groups/</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2138</wp:post_id>
-		<wp:post_date><![CDATA[2021-05-17 07:35:13]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2021-05-17 07:35:13]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 07:37:46]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 07:37:46]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[groups__trashed]]></wp:post_name>
-		<wp:status><![CDATA[trash]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
-		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
-		<wp:meta_value><![CDATA[1621237066]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
-		<wp:meta_value><![CDATA[groups]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[Photos]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/photos/</link>
-		<pubDate>Mon, 17 May 2021 07:35:13 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/photos/</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2139</wp:post_id>
-		<wp:post_date><![CDATA[2021-05-17 07:35:13]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2021-05-17 07:35:13]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 07:35:13]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 07:35:13]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[photos]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title><![CDATA[Moderation]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/moderation/</link>
-		<pubDate>Mon, 17 May 2021 07:35:13 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/moderation/</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2140</wp:post_id>
-		<wp:post_date><![CDATA[2021-05-17 07:35:13]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2021-05-17 07:35:13]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 07:35:13]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 07:35:13]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[moderation]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title><![CDATA[Forums]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/forums/</link>
-		<pubDate>Mon, 17 May 2021 07:35:13 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/forums/</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2141</wp:post_id>
-		<wp:post_date><![CDATA[2021-05-17 07:35:13]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2021-05-17 07:35:13]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 07:35:13]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 07:35:13]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[forums]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[page]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-														</item>
-					<item>
-		<title><![CDATA[]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/2142/</link>
-		<pubDate>Mon, 17 May 2021 07:35:53 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/?p=2142</guid>
-		<description></description>
-		<content:encoded><![CDATA[ ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2142</wp:post_id>
-		<wp:post_date><![CDATA[2021-05-17 07:35:53]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2021-05-17 07:35:53]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 07:35:53]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 07:35:53]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[2142]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>4</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="nav_menu" nicename="main-menu"><![CDATA[Main Menu]]></category>
-						<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-		<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-		<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2138]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/2143/</link>
-		<pubDate>Mon, 17 May 2021 07:35:53 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/?p=2143</guid>
-		<description></description>
-		<content:encoded><![CDATA[ ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2143</wp:post_id>
-		<wp:post_date><![CDATA[2021-05-17 07:35:53]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2021-05-17 07:35:53]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 07:35:53]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 07:35:53]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[2143]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>3</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="nav_menu" nicename="main-menu"><![CDATA[Main Menu]]></category>
-						<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-		<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-		<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2114]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
-		<title><![CDATA[]]></title>
-		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/2144/</link>
-		<pubDate>Mon, 17 May 2021 07:35:53 +0000</pubDate>
-		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
-		<guid isPermaLink="false">https://lms-demos.buddyxtheme.com/buddyx-pro/?p=2144</guid>
-		<description></description>
-		<content:encoded><![CDATA[ ]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2144</wp:post_id>
-		<wp:post_date><![CDATA[2021-05-17 07:35:53]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2021-05-17 07:35:53]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2021-05-17 07:35:53]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2021-05-17 07:35:53]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[2144]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>2</wp:menu_order>
-		<wp:post_type><![CDATA[nav_menu_item]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-										<category domain="nav_menu" nicename="main-menu"><![CDATA[Main Menu]]></category>
-						<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_type]]></wp:meta_key>
-		<wp:meta_value><![CDATA[post_type]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_menu_item_parent]]></wp:meta_key>
-		<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object_id]]></wp:meta_key>
-		<wp:meta_value><![CDATA[2113]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_object]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_target]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_classes]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:1:{i:0;s:0:"";}]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_xfn]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_menu_item_url]]></wp:meta_key>
-		<wp:meta_value><![CDATA[]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
 					<item>
 		<title><![CDATA[How being a Youtuber Shifted My Career]]></title>
 		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/how-being-a-youtuber-shifted-my-career/</link>
@@ -2801,6 +1922,226 @@
 			<wp:comment_user_id>1</wp:comment_user_id>
 							</wp:comment>
 					</item>
+					<item>
+		<title><![CDATA[Privacy Policy]]></title>
+		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/?page_id=60</link>
+		<pubDate>Fri, 17 Apr 2020 08:27:54 +0000</pubDate>
+		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
+		<guid isPermaLink="false">https://pro.buddyxtheme.com/?page_id=3</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:heading --><h2>Who we are</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Our website address is: https://pro.buddyxtheme.com.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>What personal data we collect and why we collect it</h2><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>Comments</h3><!-- /wp:heading --><!-- wp:paragraph --><p>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>Media</h3><!-- /wp:heading --><!-- wp:paragraph --><p>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>Contact forms</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>Cookies</h3><!-- /wp:heading --><!-- wp:paragraph --><p>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &quot;Remember Me&quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>Embedded content from other websites</h3><!-- /wp:heading --><!-- wp:paragraph --><p>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>Analytics</h3><!-- /wp:heading --><!-- wp:heading --><h2>Who we share your data with</h2><!-- /wp:heading --><!-- wp:heading --><h2>How long we retain your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>What rights you have over your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Where we send your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Visitor comments may be checked through an automated spam detection service.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Your contact information</h2><!-- /wp:heading --><!-- wp:heading --><h2>Additional information</h2><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>How we protect your data</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>What data breach procedures we have in place</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>What third parties we receive data from</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>What automated decision making and/or profiling we do with user data</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>Industry regulatory disclosure requirements</h3><!-- /wp:heading -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>60</wp:post_id>
+		<wp:post_date><![CDATA[2020-04-17 08:27:54]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2020-04-17 08:27:54]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2020-04-17 08:27:54]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2020-04-17 08:27:54]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[privacy-policy]]></wp:post_name>
+		<wp:status><![CDATA[draft]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Blog]]></title>
+		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/blog/</link>
+		<pubDate>Mon, 20 Apr 2020 18:28:08 +0000</pubDate>
+		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
+		<guid isPermaLink="false">https://pro.buddyxtheme.com/?page_id=206</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>206</wp:post_id>
+		<wp:post_date><![CDATA[2020-04-20 18:28:08]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2020-04-20 18:28:08]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2020-04-20 18:28:08]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2020-04-20 18:28:08]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[blog]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Home]]></title>
+		<link>https://lms-demos.buddyxtheme.com/buddyx-pro/</link>
+		<pubDate>Sun, 19 Jul 2020 12:21:20 +0000</pubDate>
+		<dc:creator><![CDATA[wbcomteam]]></dc:creator>
+		<guid isPermaLink="false">https://pro.buddyxtheme.com/?page_id=1828</guid>
+		<description></description>
+		<content:encoded><![CDATA[<h1>The BuddyX</h1>		
+		Simple, Clean WordPress & BuddyPress Free Theme		
+			<a href="#" role="button">
+						Free Download
+					</a>
+															<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/wordpress.jpg" title="" alt="" />															
+															<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/buddypress.jpg" title="" alt="" />															
+															<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/woocommerce.jpg" title="" alt="" />															
+															<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/wordpress.jpg" title="" alt="" />															
+															<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/buddypress.jpg" title="" alt="" />															
+			<h2>Join Our Community Today!</h2>		
+		Members of your community deserve more.​ We Are A Creative Community With A Passion For Design		
+				<h2>
+					7.242+
+				</h2>
+								<p>Activity List</p>
+				<h2>
+					842+
+				</h2>
+								<p>Online members</p>
+				<h2>
+					485+
+				</h2>
+								<p>Groups of Interests</p>
+				<h2>
+					468+
+				</h2>
+								<p>Topics Created</p>
+				<h2>
+					7.242+
+				</h2>
+								<p>Upcoming Events</p>
+			<h2>Compatible With The Most Popular Plugins</h2>		
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. 		
+				<h3>
+					BuddyPress
+				</h3>
+								<p>Ut euismod felis vel turpis fringilla rhoncus. Mauris dui libero, vestibulum sit amet est in, pretium lacinia enim.</p>
+				<h3>
+					rtMedia
+				</h3>
+								<p>Sed vel tellus nec sem posuere bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+				<h3>
+					WooCommerce
+				</h3>
+								<p>Praesent tristique porttitor venenatis. Vivamus auctor vestibulum mollis. Maecenas tincidunt, justo id consequat cursus. orci libero sodales.</p>
+				<h3>
+					Elementor
+				</h3>
+								<p>Donec porta nunc vitae magna facilisis accumsan. Phasellus mattis finibus imperdiet. Ut non molestie velit. Nunc volutpat vehicula arcu, rhoncus porta mauris ornare at.</p>
+				<h3>
+					Kirki Toolkit
+				</h3>
+								<p>Curabitur tincidunt erat leo, at mollis eros tincidunt quis. Sed ipsum turpis, ultrices et enim vitae, blandit porttitor neque. Curabitur quis erat vulputate.</p>
+				<h3>
+					More…
+				</h3>
+								<p>Vestibulum et bibendum risus. Vivamus lacus libero, sagittis ac justo id, ultricies sollicitudin quam. Aliquam at urna ligula. Sed ac mattis dolor. Praesent rutrum placerat nibh.</p>
+				<h3>
+					Join a Group or Members
+				</h3>
+								<p>Find common interests and meet new friends in the groups. Join the ones that appeal to what you like.</p>
+				<h3>
+					Start and Awesome Blog
+				</h3>
+								<p>Create a blog in the community to share your thoughts and ideas. Post articles, images and more</p>
+				<h3>
+					Have a Discussion
+				</h3>
+								<p>Start a forum topic or comment on someone elses. Share ideas and get community feedback.</p>
+				<h3>
+					Share with Friends
+				</h3>
+								<p>Make status updates to your friends and more with posts, images, videos and links.</p>
+															<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/middle-img.jpg" title="" alt="" />															
+			<h2>Build Your Site Free For Today!</h2>		
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.		
+			<a href="#" role="button">
+						Free Download
+					</a>
+			<h2>Customer Ratings</h2>		
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. 		
+							I have been working with these guys since years now! With lots of hard work and timely communication they made sure they delivered the best to me. Highly recommended!
+							<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/user.jpg" title="" alt="" />						
+														John Doe
+																						Designer
+							I have been working with these guys since years now! With lots of hard work and timely communication they made sure they delivered the best to me. Highly recommended!
+							<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/user.jpg" title="" alt="" />						
+														John Doe
+																						Designer
+							I have been working with these guys since years now! With lots of hard work and timely communication they made sure they delivered the best to me. Highly recommended!
+							<img src="https://pro.buddyxtheme.com/wp-content/uploads/2020/07/user.jpg" title="" alt="" />						
+														John Doe
+																						Designer
+			<h2>Get started in no time</h2>		
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. 		
+			<a href="#" role="button">
+						  Free Download Theme
+					</a>
+			<h2>Recents Update</h2>		
+		Praesent tristique porttitor venenatis. Vivamus auctor vestibulum mollis. Maecenas tincidunt, justo id consequat cursus, orci libero sodales ex, id lacinia sem sapien ac lacus. Aliquam ut ante eu purus aliquam lacinia quis in nisi.		
+			<figure><img width="900" height="600" src="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-3-min.jpg" alt="" loading="lazy" srcset="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-3-min.jpg 900w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-3-min-300x200.jpg 300w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-3-min-768x512.jpg 768w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-3-min-720x480.jpg 720w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-3-min-600x400.jpg 600w" sizes="(min-width: 960px) 75vw, 100vw" /></figure><h3>What’s next after US The pulls out</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>		
+			<figure><a href="#"><img width="900" height="600" src="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-2-min.jpg" alt="" loading="lazy" srcset="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-2-min.jpg 900w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-2-min-300x200.jpg 300w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-2-min-768x512.jpg 768w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-2-min-720x480.jpg 720w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-2-min-600x400.jpg 600w" sizes="(min-width: 960px) 75vw, 100vw" /></a></figure><h3><a href="#">Adidas expects normalis strong growth</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>		
+			<figure><a href="#"><img width="900" height="600" src="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-1-min.jpg" alt="" loading="lazy" srcset="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-1-min.jpg 900w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-1-min-300x200.jpg 300w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-1-min-768x512.jpg 768w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-1-min-720x480.jpg 720w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-1-min-600x400.jpg 600w" sizes="(min-width: 960px) 75vw, 100vw" /></a></figure><h3><a href="#">What is Worse than Youtube Rewind</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>		
+			<figure><a href="#"><img width="900" height="600" src="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-13-min.jpg" alt="" loading="lazy" srcset="https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-13-min.jpg 900w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-13-min-300x200.jpg 300w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-13-min-768x512.jpg 768w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-13-min-720x480.jpg 720w, https://lms-demos.buddyxtheme.com/buddyx-pro/wp-content/uploads/sites/12/2021/05/blog-img-13-min-600x400.jpg 600w" sizes="(min-width: 960px) 75vw, 100vw" /></a></figure><h3><a href="#">Don’t Make a Three-Parent Baby</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>1828</wp:post_id>
+		<wp:post_date><![CDATA[2020-07-19 12:21:20]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2020-07-19 12:21:20]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2021-05-17 06:27:26]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2021-05-17 06:27:26]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[home]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+		<wp:meta_value><![CDATA[elementor_header_footer]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_edit_mode]]></wp:meta_key>
+		<wp:meta_value><![CDATA[builder]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_template_type]]></wp:meta_key>
+		<wp:meta_value><![CDATA[wp-page]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_version]]></wp:meta_key>
+		<wp:meta_value><![CDATA[3.2.3]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_data]]></wp:meta_key>
+		<wp:meta_value><![CDATA[[{"id":"3764fa15","elType":"section","settings":{"stretch_section":"section-stretched","height":"min-height","background_background":"classic","background_image":{"id":1830,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/header-bg.jpg"},"background_position":"center center","background_attachment":"scroll","background_repeat":"no-repeat","background_size":"cover","custom_height":{"unit":"px","size":500,"sizes":[]},"custom_height_tablet":{"unit":"px","size":300,"sizes":[]}},"elements":[{"id":"51b67a54","elType":"column","settings":{"_column_size":100,"_inline_size":null},"elements":[{"id":"2e5f039f","elType":"widget","settings":{"title":"The BuddyX","header_size":"h1","align":"center","title_color":"#FFFFFF"},"elements":[],"widgetType":"heading"},{"id":"5d34d272","elType":"widget","settings":{"editor":"Simple, Clean WordPress & BuddyPress Free Theme","align":"center","text_color":"#FFFFFF"},"elements":[],"widgetType":"text-editor"},{"id":"7c42c62a","elType":"widget","settings":{"text":"Free Download","align":"center","size":"md","button_text_color":"#FFFFFF","background_color":"#EF5455"},"elements":[],"widgetType":"button"}],"isInner":false}],"isInner":false},{"id":"2f35b9da","elType":"section","settings":{"stretch_section":"section-stretched","structure":"50","background_background":"classic","background_color":"#FFFFFF"},"elements":[{"id":"141d67dd","elType":"column","settings":{"_column_size":20,"_inline_size":null,"_inline_size_mobile":50},"elements":[{"id":"10ecb953","elType":"widget","settings":{"image":{"id":1831,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/wordpress.jpg"},"width":{"unit":"%","size":80,"sizes":[]}},"elements":[],"widgetType":"image"}],"isInner":false},{"id":"4a8aa667","elType":"column","settings":{"_column_size":20,"_inline_size":null,"_inline_size_mobile":50},"elements":[{"id":"479b2b53","elType":"widget","settings":{"image":{"id":1832,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/buddypress.jpg"},"width":{"unit":"%","size":80,"sizes":[]}},"elements":[],"widgetType":"image"}],"isInner":false},{"id":"170f8c3f","elType":"column","settings":{"_column_size":20,"_inline_size":null,"_inline_size_mobile":50},"elements":[{"id":"52306bcb","elType":"widget","settings":{"image":{"id":1833,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/woocommerce.jpg"},"width":{"unit":"%","size":80,"sizes":[]}},"elements":[],"widgetType":"image"}],"isInner":false},{"id":"70e2d7","elType":"column","settings":{"_column_size":20,"_inline_size":null,"_inline_size_mobile":50},"elements":[{"id":"92a9aee","elType":"widget","settings":{"image":{"id":1831,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/wordpress.jpg"},"width":{"unit":"%","size":80,"sizes":[]}},"elements":[],"widgetType":"image"}],"isInner":false},{"id":"6cc04c9b","elType":"column","settings":{"_column_size":20,"_inline_size":null,"_inline_size_mobile":50,"hide_mobile":"hidden-phone"},"elements":[{"id":"7ccd7919","elType":"widget","settings":{"image":{"id":1832,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/buddypress.jpg"},"width":{"unit":"%","size":80,"sizes":[]}},"elements":[],"widgetType":"image"}],"isInner":false}],"isInner":false},{"id":"4e2258d4","elType":"section","settings":{"stretch_section":"section-stretched","margin":{"unit":"px","top":"70","right":0,"bottom":"70","left":0,"isLinked":true}},"elements":[{"id":"76b6f7b0","elType":"column","settings":{"_column_size":100,"_inline_size":null},"elements":[{"id":"7564450e","elType":"widget","settings":{"title":"Join Our Community Today!","align":"center"},"elements":[],"widgetType":"heading"},{"id":"11fe57d4","elType":"widget","settings":{"editor":"Members of your community deserve more.\u200b We Are A Creative Community With A Passion For Design","align":"center"},"elements":[],"widgetType":"text-editor"},{"id":"703ef8af","elType":"section","settings":{"structure":"50","margin":{"unit":"px","top":"10","right":0,"bottom":"0","left":0,"isLinked":false}},"elements":[{"id":"1cc177f9","elType":"column","settings":{"_column_size":20,"_inline_size":null},"elements":[{"id":"7eb04d31","elType":"widget","settings":{"selected_icon":{"value":"far fa-bell","library":"fa-regular"},"title_text":"7.242+","description_text":"Activity List","title_size":"h2","primary_color":"#EF5455","icon_space":{"unit":"px","size":10,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]},"title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":32,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"62087d91","elType":"column","settings":{"_column_size":20,"_inline_size":null},"elements":[{"id":"73cb2729","elType":"widget","settings":{"selected_icon":{"value":"far fa-user","library":"fa-regular"},"title_text":"842+","description_text":"Online members","title_size":"h2","primary_color":"#EF5455","icon_space":{"unit":"px","size":10,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]},"title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":32,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"74698e23","elType":"column","settings":{"_column_size":20,"_inline_size":null},"elements":[{"id":"52503d0b","elType":"widget","settings":{"selected_icon":{"value":"fas fa-users","library":"fa-solid"},"title_text":"485+","description_text":"Groups of Interests","title_size":"h2","primary_color":"#EF5455","icon_space":{"unit":"px","size":10,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]},"title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":32,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"212cf2c7","elType":"column","settings":{"_column_size":20,"_inline_size":null},"elements":[{"id":"31b989bf","elType":"widget","settings":{"selected_icon":{"value":"far fa-comments","library":"fa-regular"},"title_text":"468+","description_text":"Topics Created","title_size":"h2","primary_color":"#EF5455","icon_space":{"unit":"px","size":10,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]},"title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":32,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"68bb4107","elType":"column","settings":{"_column_size":20,"_inline_size":null},"elements":[{"id":"2286dd82","elType":"widget","settings":{"selected_icon":{"value":"far fa-calendar-alt","library":"fa-regular"},"title_text":"7.242+","description_text":"Upcoming Events","title_size":"h2","primary_color":"#EF5455","icon_space":{"unit":"px","size":10,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]},"title_typography_typography":"custom","title_typography_font_size":{"unit":"px","size":32,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true}],"isInner":true}],"isInner":false}],"isInner":false},{"id":"60cc6c5","elType":"section","settings":{"stretch_section":"section-stretched"},"elements":[{"id":"4a114304","elType":"column","settings":{"_column_size":100,"_inline_size":null},"elements":[{"id":"8c97c7e","elType":"widget","settings":{"title":"Compatible With The Most Popular Plugins","align":"center"},"elements":[],"widgetType":"heading"},{"id":"5906c76","elType":"widget","settings":{"editor":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ","align":"center"},"elements":[],"widgetType":"text-editor"},{"id":"1d3ebf23","elType":"section","settings":{"structure":"30"},"elements":[{"id":"404583f9","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"40","right":"30","bottom":"40","left":"30","isLinked":false}},"elements":[{"id":"450d5088","elType":"widget","settings":{"selected_icon":{"value":"fas fa-user","library":"fa-solid"},"title_text":"BuddyPress","description_text":"Ut euismod felis vel turpis fringilla rhoncus. Mauris dui libero, vestibulum sit amet est in, pretium lacinia enim.","primary_color":"#EF5455","icon_size":{"unit":"px","size":40,"sizes":[]},"title_bottom_space":{"unit":"px","size":12,"sizes":[]},"title_typography_typography":"custom"},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"7a829a78","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"40","right":"30","bottom":"40","left":"30","isLinked":false}},"elements":[{"id":"18b27411","elType":"widget","settings":{"title_text":"rtMedia","description_text":"Sed vel tellus nec sem posuere bibendum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. ","primary_color":"#EF5455","icon_size":{"unit":"px","size":40,"sizes":[]},"title_bottom_space":{"unit":"px","size":12,"sizes":[]},"title_typography_typography":"custom"},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"46c9e40d","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"40","right":"30","bottom":"40","left":"30","isLinked":false}},"elements":[{"id":"7f3d83b2","elType":"widget","settings":{"title_text":"WooCommerce","description_text":"Praesent tristique porttitor venenatis. Vivamus auctor vestibulum mollis. Maecenas tincidunt, justo id consequat cursus. orci libero sodales.","primary_color":"#EF5455","icon_size":{"unit":"px","size":40,"sizes":[]},"title_bottom_space":{"unit":"px","size":12,"sizes":[]},"title_typography_typography":"custom"},"elements":[],"widgetType":"icon-box"}],"isInner":true}],"isInner":true},{"id":"7593faa7","elType":"section","settings":{"structure":"30"},"elements":[{"id":"3597fa60","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"40","right":"30","bottom":"40","left":"30","isLinked":false}},"elements":[{"id":"727c3292","elType":"widget","settings":{"selected_icon":{"value":"fas fa-user","library":"fa-solid"},"title_text":"Elementor","description_text":"Donec porta nunc vitae magna facilisis accumsan. Phasellus mattis finibus imperdiet. Ut non molestie velit. Nunc volutpat vehicula arcu, rhoncus porta mauris ornare at.","primary_color":"#EF5455","icon_size":{"unit":"px","size":40,"sizes":[]},"title_bottom_space":{"unit":"px","size":12,"sizes":[]},"title_typography_typography":"custom"},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"6cea389d","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"40","right":"30","bottom":"40","left":"30","isLinked":false}},"elements":[{"id":"513b19fe","elType":"widget","settings":{"title_text":"Kirki Toolkit","description_text":"Curabitur tincidunt erat leo, at mollis eros tincidunt quis. Sed ipsum turpis, ultrices et enim vitae, blandit porttitor neque. Curabitur quis erat vulputate.","primary_color":"#EF5455","icon_size":{"unit":"px","size":40,"sizes":[]},"title_bottom_space":{"unit":"px","size":12,"sizes":[]},"title_typography_typography":"custom"},"elements":[],"widgetType":"icon-box"}],"isInner":true},{"id":"371321d1","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"40","right":"30","bottom":"40","left":"30","isLinked":false}},"elements":[{"id":"7a0593ee","elType":"widget","settings":{"title_text":"More\u2026","description_text":"Vestibulum et bibendum risus. Vivamus lacus libero, sagittis ac justo id, ultricies sollicitudin quam. Aliquam at urna ligula. Sed ac mattis dolor. Praesent rutrum placerat nibh.","primary_color":"#EF5455","icon_size":{"unit":"px","size":40,"sizes":[]},"title_bottom_space":{"unit":"px","size":12,"sizes":[]},"title_typography_typography":"custom"},"elements":[],"widgetType":"icon-box"}],"isInner":true}],"isInner":true}],"isInner":false}],"isInner":false},{"id":"4f611350","elType":"section","settings":{"stretch_section":"section-stretched","structure":"20","margin":{"unit":"px","top":"50","right":0,"bottom":"0","left":0,"isLinked":false}},"elements":[{"id":"3980a42a","elType":"column","settings":{"_column_size":50,"_inline_size":55},"elements":[{"id":"25995a2d","elType":"section","settings":{"margin":{"unit":"px","top":"0","right":0,"bottom":"10","left":0,"isLinked":false}},"elements":[{"id":"6f4db397","elType":"column","settings":{"_column_size":100,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","border_border":"solid","border_width":{"unit":"px","top":"1","right":"1","bottom":"1","left":"1","isLinked":true},"border_color":"#ECF0F1","border_radius":{"unit":"px","top":"5","right":"5","bottom":"5","left":"5","isLinked":true},"margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"padding":{"unit":"px","top":"25","right":"25","bottom":"25","left":"25","isLinked":true}},"elements":[{"id":"1215338b","elType":"widget","settings":{"title_text":"Join a Group or Members","description_text":"Find common interests and meet new friends in the groups. Join the ones that appeal to what you like.","position":"left","primary_color":"#333333","icon_space":{"unit":"px","size":20,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true}],"isInner":true},{"id":"22821358","elType":"section","settings":{"margin":{"unit":"px","top":"10","right":0,"bottom":"10","left":0,"isLinked":true}},"elements":[{"id":"65098568","elType":"column","settings":{"_column_size":100,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","border_border":"solid","border_width":{"unit":"px","top":"1","right":"1","bottom":"1","left":"1","isLinked":true},"border_color":"#ECF0F1","border_radius":{"unit":"px","top":"5","right":"5","bottom":"5","left":"5","isLinked":true},"margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"padding":{"unit":"px","top":"25","right":"25","bottom":"25","left":"25","isLinked":true}},"elements":[{"id":"24549d1f","elType":"widget","settings":{"selected_icon":{"value":"fab fa-wordpress-simple","library":"fa-brands"},"title_text":"Start and Awesome Blog","description_text":"Create a blog in the community to share your thoughts and ideas. Post articles, images and more","position":"left","primary_color":"#333333","icon_space":{"unit":"px","size":20,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true}],"isInner":true},{"id":"67c1c64","elType":"section","settings":{"margin":{"unit":"px","top":"10","right":0,"bottom":"10","left":0,"isLinked":true}},"elements":[{"id":"5649a93d","elType":"column","settings":{"_column_size":100,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","border_border":"solid","border_width":{"unit":"px","top":"1","right":"1","bottom":"1","left":"1","isLinked":true},"border_color":"#ECF0F1","border_radius":{"unit":"px","top":"5","right":"5","bottom":"5","left":"5","isLinked":true},"margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"padding":{"unit":"px","top":"25","right":"25","bottom":"25","left":"25","isLinked":true}},"elements":[{"id":"5d60d4d0","elType":"widget","settings":{"selected_icon":{"value":"fas fa-comments","library":"fa-solid"},"title_text":"Have a Discussion","description_text":"Start a forum topic or comment on someone elses. Share ideas and get community feedback.","position":"left","primary_color":"#333333","icon_space":{"unit":"px","size":20,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true}],"isInner":true},{"id":"7f58ccbf","elType":"section","settings":{"margin":{"unit":"px","top":"10","right":0,"bottom":"10","left":0,"isLinked":true}},"elements":[{"id":"fb3bf74","elType":"column","settings":{"_column_size":100,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","border_border":"solid","border_width":{"unit":"px","top":"1","right":"1","bottom":"1","left":"1","isLinked":true},"border_color":"#ECF0F1","border_radius":{"unit":"px","top":"5","right":"5","bottom":"5","left":"5","isLinked":true},"margin":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":true},"padding":{"unit":"px","top":"25","right":"25","bottom":"25","left":"25","isLinked":true}},"elements":[{"id":"176eebad","elType":"widget","settings":{"selected_icon":{"value":"fas fa-share","library":"fa-solid"},"title_text":"Share with Friends","description_text":"Make status updates to your friends and more with posts, images, videos and links.","position":"left","primary_color":"#333333","icon_space":{"unit":"px","size":20,"sizes":[]},"icon_size":{"unit":"px","size":32,"sizes":[]},"title_bottom_space":{"unit":"px","size":5,"sizes":[]}},"elements":[],"widgetType":"icon-box"}],"isInner":true}],"isInner":true}],"isInner":false},{"id":"3b937592","elType":"column","settings":{"_column_size":50,"_inline_size":44.956},"elements":[{"id":"f293910","elType":"widget","settings":{"image":{"id":1834,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/middle-img.jpg"}},"elements":[],"widgetType":"image"}],"isInner":false}],"isInner":false},{"id":"4c3cf97a","elType":"section","settings":{"content_position":"middle","structure":"20","background_background":"classic","background_color":"#FFFFFF","border_radius":{"unit":"px","top":"3","right":"3","bottom":"3","left":"3","isLinked":true},"box_shadow_box_shadow_type":"yes","box_shadow_box_shadow":{"horizontal":0,"vertical":0,"blur":20,"spread":0,"color":"rgba(0, 0, 0, 0.05)"},"margin":{"unit":"px","top":"50","right":0,"bottom":"50","left":0,"isLinked":true},"padding":{"unit":"px","top":"30","right":"30","bottom":"30","left":"30","isLinked":true}},"elements":[{"id":"3d3fc6fe","elType":"column","settings":{"_column_size":50,"_inline_size":69.912},"elements":[{"id":"78d27153","elType":"widget","settings":{"title":"Build Your Site Free For Today!"},"elements":[],"widgetType":"heading"},{"id":"38c13c87","elType":"widget","settings":{"editor":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."},"elements":[],"widgetType":"text-editor"}],"isInner":false},{"id":"18e03e17","elType":"column","settings":{"_column_size":50,"_inline_size":30.044},"elements":[{"id":"65081ac6","elType":"widget","settings":{"text":"Free Download","align":"right","align_mobile":"left","size":"md","button_text_color":"#FFFFFF","background_color":"#EF5455","border_radius":{"unit":"px","top":"3","right":"3","bottom":"3","left":"3","isLinked":true}},"elements":[],"widgetType":"button"}],"isInner":false}],"isInner":false},{"id":"133d0cde","elType":"section","settings":[],"elements":[{"id":"47efaab2","elType":"column","settings":{"_column_size":100,"_inline_size":null},"elements":[{"id":"36bac4a2","elType":"widget","settings":{"title":"Customer Ratings","align":"center"},"elements":[],"widgetType":"heading"},{"id":"5d30b3c7","elType":"widget","settings":{"editor":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ","align":"center"},"elements":[],"widgetType":"text-editor"},{"id":"27a0e249","elType":"section","settings":{"structure":"30"},"elements":[{"id":"5f3c1820","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"30","right":"30","bottom":"30","left":"30","isLinked":true}},"elements":[{"id":"54ac5a6e","elType":"widget","settings":{"testimonial_content":"I have been working with these guys since years now! With lots of hard work and timely communication they made sure they delivered the best to me. Highly recommended!","testimonial_image":{"id":1835,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/user.jpg"},"testimonial_name":"John Doe","testimonial_job":"Designer","content_typography_typography":"custom","content_typography_font_size":{"unit":"px","size":16,"sizes":[]},"image_size":{"unit":"px","size":48,"sizes":[]},"name_typography_typography":"custom","name_typography_font_size":{"unit":"px","size":16,"sizes":[]},"job_typography_typography":"custom","job_typography_font_size":{"unit":"px","size":14,"sizes":[]},"job_typography_font_style":"italic"},"elements":[],"widgetType":"testimonial"}],"isInner":true},{"id":"5eb46d50","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"30","right":"30","bottom":"30","left":"30","isLinked":true}},"elements":[{"id":"5d39cd64","elType":"widget","settings":{"testimonial_content":"I have been working with these guys since years now! With lots of hard work and timely communication they made sure they delivered the best to me. Highly recommended!","testimonial_image":{"id":1835,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/user.jpg"},"testimonial_name":"John Doe","testimonial_job":"Designer","content_typography_typography":"custom","content_typography_font_size":{"unit":"px","size":16,"sizes":[]},"image_size":{"unit":"px","size":48,"sizes":[]},"name_typography_typography":"custom","name_typography_font_size":{"unit":"px","size":16,"sizes":[]},"job_typography_typography":"custom","job_typography_font_size":{"unit":"px","size":14,"sizes":[]},"job_typography_font_style":"italic"},"elements":[],"widgetType":"testimonial"}],"isInner":true},{"id":"4a15231a","elType":"column","settings":{"_column_size":33,"_inline_size":null,"background_background":"classic","background_color":"#FFFFFF","margin":{"unit":"px","top":"10","right":"10","bottom":"10","left":"10","isLinked":true},"padding":{"unit":"px","top":"30","right":"30","bottom":"30","left":"30","isLinked":true}},"elements":[{"id":"61fa5cb4","elType":"widget","settings":{"testimonial_content":"I have been working with these guys since years now! With lots of hard work and timely communication they made sure they delivered the best to me. Highly recommended!","testimonial_image":{"id":1835,"url":"https:\/\/pro.buddyxtheme.com\/wp-content\/uploads\/2020\/07\/user.jpg"},"testimonial_name":"John Doe","testimonial_job":"Designer","content_typography_typography":"custom","content_typography_font_size":{"unit":"px","size":16,"sizes":[]},"image_size":{"unit":"px","size":48,"sizes":[]},"name_typography_typography":"custom","name_typography_font_size":{"unit":"px","size":16,"sizes":[]},"job_typography_typography":"custom","job_typography_font_size":{"unit":"px","size":14,"sizes":[]},"job_typography_font_style":"italic"},"elements":[],"widgetType":"testimonial"}],"isInner":true}],"isInner":true}],"isInner":false}],"isInner":false},{"id":"57c17cba","elType":"section","settings":{"stretch_section":"section-stretched","background_background":"classic","background_color":"#EF5455","margin":{"unit":"px","top":"50","right":0,"bottom":"50","left":0,"isLinked":true},"padding":{"unit":"px","top":"50","right":"0","bottom":"50","left":"0","isLinked":false}},"elements":[{"id":"4aa090f0","elType":"column","settings":{"_column_size":100,"_inline_size":100,"space_between_widgets":15},"elements":[{"id":"77378d5d","elType":"widget","settings":{"title":"Get started in no time","align":"center","title_color":"#FFFFFF"},"elements":[],"widgetType":"heading"},{"id":"7820ee92","elType":"widget","settings":{"editor":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. ","align":"center","text_color":"#FFFFFF"},"elements":[],"widgetType":"text-editor"},{"id":"6aa2e0ee","elType":"widget","settings":{"text":"  Free Download Theme","align":"center","size":"md","button_text_color":"#EF5455","background_color":"#FFFFFF"},"elements":[],"widgetType":"button"}],"isInner":false}],"isInner":false},{"id":"7f7af56d","elType":"section","settings":{"stretch_section":"section-stretched"},"elements":[{"id":"6393e9e6","elType":"column","settings":{"_column_size":100,"_inline_size":null},"elements":[{"id":"20b11a70","elType":"widget","settings":{"title":"Recents Update","align":"center"},"elements":[],"widgetType":"heading"},{"id":"4ef9f85","elType":"widget","settings":{"editor":"Praesent tristique porttitor venenatis. Vivamus auctor vestibulum mollis. Maecenas tincidunt, justo id consequat cursus, orci libero sodales ex, id lacinia sem sapien ac lacus. Aliquam ut ante eu purus aliquam lacinia quis in nisi.","align":"center"},"elements":[],"widgetType":"text-editor"}],"isInner":false}],"isInner":false},{"id":"288e654","elType":"section","settings":{"structure":"40"},"elements":[{"id":"bc92e26","elType":"column","settings":{"_column_size":25,"_inline_size":null},"elements":[{"id":"9313b96","elType":"widget","settings":{"image":{"url":"https:\/\/lms-demos.buddyxtheme.com\/buddyx-pro\/wp-content\/uploads\/sites\/12\/2021\/05\/blog-img-3-min.jpg","id":2065},"title_text":"What\u2019s next after US The pulls out","description_text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.","image_space":{"unit":"px","size":5,"sizes":[]},"image_size":{"unit":"%","size":100,"sizes":[]},"text_align":"left","title_bottom_space":{"unit":"px","size":10,"sizes":[]}},"elements":[],"widgetType":"image-box"}],"isInner":false},{"id":"a27fbc6","elType":"column","settings":{"_column_size":25,"_inline_size":null},"elements":[{"id":"f368659","elType":"widget","settings":{"image":{"url":"https:\/\/lms-demos.buddyxtheme.com\/buddyx-pro\/wp-content\/uploads\/sites\/12\/2021\/05\/blog-img-2-min.jpg","id":2064},"title_text":"Adidas expects normalis strong growth","description_text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.","link":{"url":"#","is_external":"","nofollow":"","custom_attributes":""},"image_space":{"unit":"px","size":5,"sizes":[]},"image_size":{"unit":"%","size":100,"sizes":[]},"text_align":"left","title_bottom_space":{"unit":"px","size":10,"sizes":[]}},"elements":[],"widgetType":"image-box"}],"isInner":false},{"id":"9f5fa70","elType":"column","settings":{"_column_size":25,"_inline_size":null},"elements":[{"id":"49c234c","elType":"widget","settings":{"image":{"url":"https:\/\/lms-demos.buddyxtheme.com\/buddyx-pro\/wp-content\/uploads\/sites\/12\/2021\/05\/blog-img-1-min.jpg","id":2063},"title_text":"What is Worse than Youtube Rewind","description_text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.","link":{"url":"#","is_external":"","nofollow":"","custom_attributes":""},"image_space":{"unit":"px","size":5,"sizes":[]},"image_size":{"unit":"%","size":100,"sizes":[]},"text_align":"left","title_bottom_space":{"unit":"px","size":10,"sizes":[]}},"elements":[],"widgetType":"image-box"}],"isInner":false},{"id":"37b1c01","elType":"column","settings":{"_column_size":25,"_inline_size":null},"elements":[{"id":"7cba523","elType":"widget","settings":{"image":{"url":"https:\/\/lms-demos.buddyxtheme.com\/buddyx-pro\/wp-content\/uploads\/sites\/12\/2021\/05\/blog-img-13-min.jpg","id":2062},"title_text":"Don\u2019t Make a Three-Parent Baby","description_text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.","link":{"url":"#","is_external":"","nofollow":"","custom_attributes":""},"image_space":{"unit":"px","size":5,"sizes":[]},"image_size":{"unit":"%","size":100,"sizes":[]},"text_align":"left","title_bottom_space":{"unit":"px","size":10,"sizes":[]}},"elements":[],"widgetType":"image-box"}],"isInner":false}],"isInner":false}]]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[eael_transient_elements]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:0:{}]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_elementor_controls_usage]]></wp:meta_key>
+		<wp:meta_value><![CDATA[a:9:{s:7:"heading";a:3:{s:5:"count";i:7;s:15:"control_percent";i:1;s:8:"controls";a:2:{s:7:"content";a:1:{s:13:"section_title";a:3:{s:5:"title";i:7;s:11:"header_size";i:1;s:5:"align";i:6;}}s:5:"style";a:1:{s:19:"section_title_style";a:1:{s:11:"title_color";i:2;}}}}s:11:"text-editor";a:3:{s:5:"count";i:7;s:15:"control_percent";i:1;s:8:"controls";a:2:{s:7:"content";a:1:{s:14:"section_editor";a:1:{s:6:"editor";i:7;}}s:5:"style";a:1:{s:13:"section_style";a:2:{s:5:"align";i:6;s:10:"text_color";i:2;}}}}s:6:"button";a:3:{s:5:"count";i:3;s:15:"control_percent";i:1;s:8:"controls";a:2:{s:7:"content";a:1:{s:14:"section_button";a:4:{s:4:"text";i:3;s:5:"align";i:3;s:4:"size";i:3;s:12:"align_mobile";i:1;}}s:5:"style";a:1:{s:13:"section_style";a:3:{s:17:"button_text_color";i:3;s:16:"background_color";i:3;s:13:"border_radius";i:1;}}}}s:6:"column";a:3:{s:5:"count";i:37;s:15:"control_percent";i:0;s:8:"controls";a:3:{s:6:"layout";a:1:{s:6:"layout";a:3:{s:12:"_inline_size";i:37;s:19:"_inline_size_mobile";i:5;s:21:"space_between_widgets";i:1;}}s:8:"advanced";a:2:{s:19:"_section_responsive";a:1:{s:11:"hide_mobile";i:1;}s:16:"section_advanced";a:2:{s:6:"margin";i:13;s:7:"padding";i:13;}}s:5:"style";a:2:{s:13:"section_style";a:2:{s:21:"background_background";i:13;s:16:"background_color";i:13;}s:14:"section_border";a:4:{s:13:"border_border";i:4;s:12:"border_width";i:4;s:12:"border_color";i:4;s:13:"border_radius";i:4;}}}}s:7:"section";a:3:{s:5:"count";i:18;s:15:"control_percent";i:0;s:8:"controls";a:3:{s:6:"layout";a:2:{s:14:"section_layout";a:5:{s:15:"stretch_section";i:7;s:6:"height";i:1;s:13:"custom_height";i:1;s:20:"custom_height_tablet";i:1;s:16:"content_position";i:1;}s:17:"section_structure";a:1:{s:9:"structure";i:8;}}s:5:"style";a:2:{s:18:"section_background";a:7:{s:21:"background_background";i:4;s:16:"background_image";i:1;s:19:"background_position";i:1;s:21:"background_attachment";i:1;s:17:"background_repeat";i:1;s:15:"background_size";i:1;s:16:"background_color";i:3;}s:14:"section_border";a:3:{s:13:"border_radius";i:1;s:26:"box_shadow_box_shadow_type";i:1;s:21:"box_shadow_box_shadow";i:1;}}s:8:"advanced";a:1:{s:16:"section_advanced";a:2:{s:6:"margin";i:9;s:7:"padding";i:2;}}}}s:5:"image";a:3:{s:5:"count";i:6;s:15:"control_percent";i:0;s:8:"controls";a:2:{s:7:"content";a:1:{s:13:"section_image";a:1:{s:5:"image";i:6;}}s:5:"style";a:1:{s:19:"section_style_image";a:1:{s:5:"width";i:5;}}}}s:8:"icon-box";a:3:{s:5:"count";i:15;s:15:"control_percent";i:3;s:8:"controls";a:2:{s:7:"content";a:1:{s:12:"section_icon";a:5:{s:13:"selected_icon";i:10;s:10:"title_text";i:15;s:16:"description_text";i:15;s:10:"title_size";i:5;s:8:"position";i:4;}}s:5:"style";a:2:{s:18:"section_style_icon";a:3:{s:13:"primary_color";i:15;s:10:"icon_space";i:9;s:9:"icon_size";i:15;}s:21:"section_style_content";a:3:{s:18:"title_bottom_space";i:15;s:27:"title_typography_typography";i:11;s:26:"title_typography_font_size";i:5;}}}}s:11:"testimonial";a:3:{s:5:"count";i:3;s:15:"control_percent";i:3;s:8:"controls";a:2:{s:7:"content";a:1:{s:19:"section_testimonial";a:2:{s:19:"testimonial_content";i:3;s:17:"testimonial_image";i:3;}}s:5:"style";a:4:{s:33:"section_style_testimonial_content";a:2:{s:29:"content_typography_typography";i:3;s:28:"content_typography_font_size";i:3;}s:31:"section_style_testimonial_image";a:1:{s:10:"image_size";i:3;}s:30:"section_style_testimonial_name";a:2:{s:26:"name_typography_typography";i:3;s:25:"name_typography_font_size";i:3;}s:29:"section_style_testimonial_job";a:3:{s:25:"job_typography_typography";i:3;s:24:"job_typography_font_size";i:3;s:25:"job_typography_font_style";i:3;}}}}s:9:"image-box";a:3:{s:5:"count";i:4;s:15:"control_percent";i:2;s:8:"controls";a:2:{s:7:"content";a:1:{s:13:"section_image";a:3:{s:5:"image";i:4;s:10:"title_text";i:4;s:4:"link";i:3;}}s:5:"style";a:2:{s:19:"section_style_image";a:2:{s:11:"image_space";i:4;s:10:"image_size";i:4;}s:21:"section_style_content";a:2:{s:10:"text_align";i:4;s:18:"title_bottom_space";i:4;}}}}}]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
 				</channel>
 </rss>
 	
