@@ -24,16 +24,16 @@ define( 'BDI_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
  * Include Merlin related Files.
  */
 
-if ( !function_exists( 'bdi_file_includes' ) ) {
+if ( ! function_exists( 'bdi_file_includes' ) ) {
 
 	add_action( 'init', 'bdi_file_includes' );
 
 	function bdi_file_includes() {
 		require_once BDI_PLUGIN_PATH . 'vendor/autoload.php';
 		require_once BDI_PLUGIN_PATH . 'class-merlin.php';
+		require_once BDI_PLUGIN_PATH . 'includes/buddyx-demo-functions.php';
 		require_once BDI_PLUGIN_PATH . 'buddyx-demo-importer-config.php';
 	}
-
 }
 
 
@@ -48,10 +48,10 @@ function bdi_activated_plugin_redirect( $plugin ) {
 
 	if ( $plugin == plugin_basename( __FILE__ ) ) {
 
-		if ( isset( $_GET[ 'page' ] ) && $_GET[ 'page' ] == 'tgmpa-install-plugins' ) {
+		if ( isset( $_GET['page'] ) && $_GET['page'] == 'tgmpa-install-plugins' ) {
 			?>
 			<script>
-			    window.location = "<?php echo admin_url( 'themes.php?page=buddyx-sample-demo-import' ); ?>";
+				window.location = "<?php echo admin_url( 'themes.php?page=buddyx-sample-demo-import' ); ?>";
 			</script>
 			<?php
 			wp_die();
@@ -60,4 +60,21 @@ function bdi_activated_plugin_redirect( $plugin ) {
 			exit;
 		}
 	}
+}
+
+add_filter( 'buddyx_plugin_install', 'buddyx_demo_plugin_installer' );
+function buddyx_demo_plugin_installer( $plugins ) {
+    
+	$plugins[] = array(
+		'name'     => 'BuddyPress',
+		'slug'     => 'buddypress',
+		'required' => false,
+	);
+	$plugins[] = array(
+		'name'     => 'WooCommerce',
+		'slug'     => 'woocommerce',
+		'required' => false,
+	);
+
+	return $plugins;
 }
