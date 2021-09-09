@@ -1941,7 +1941,7 @@ class Merlin {
 	public function get_import_data_info( $selected_import_index = 0 ) {
 		$import_data = array(
 			'content' => false,
-			'products-content'=> false,
+			'products-content'=> false,			
 			'page-content' => false,
 			'buddypress'   => false,
 			'widgets'      => false,
