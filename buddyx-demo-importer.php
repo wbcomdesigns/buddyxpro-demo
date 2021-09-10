@@ -64,7 +64,7 @@ function bdi_activated_plugin_redirect( $plugin ) {
 
 add_filter( 'buddyx_plugin_install', 'buddyx_demo_plugin_installer' );
 function buddyx_demo_plugin_installer( $plugins ) {
-    
+
 	$plugins[] = array(
 		'name'     => 'BuddyPress',
 		'slug'     => 'buddypress',
@@ -73,6 +73,12 @@ function buddyx_demo_plugin_installer( $plugins ) {
 	$plugins[] = array(
 		'name'     => 'WooCommerce',
 		'slug'     => 'woocommerce',
+		'required' => false,
+	);
+	$plugins[] = array(
+		'name'     => 'BuddyBoss Platform',
+		'slug'     => 'buddyboss-platform',
+                'source'	 => 'https://demos.wbcomdesigns.com/exporter/plugins/buddyboss-platform/1.7.6/buddyboss-platform.zip',
 		'required' => false,
 	);
 
