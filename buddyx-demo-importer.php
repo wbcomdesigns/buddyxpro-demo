@@ -81,6 +81,12 @@ function buddyx_demo_plugin_installer( $plugins ) {
                 'source'	 => 'https://demos.wbcomdesigns.com/exporter/plugins/buddyboss-platform/1.7.6/buddyboss-platform.zip',
 		'required' => false,
 	);
+        $plugins[] = array(
+		'name'     => 'Wbcom Essential',
+		'slug'     => 'wbcom-essential',
+		'source'   => 'https://demos.wbcomdesigns.com/exporter/plugins/wbcom-essential/3.4.1/wbcom-essential.zip',
+		'required' => false,
+	);
 
 	return $plugins;
 }
