@@ -289,7 +289,7 @@ class Merlin {
 			}
 		}
 
-		// Get the logger object, so it can be used in the whole class.		
+		// Get the logger object, so it can be used in the whole class.
 		require_once trailingslashit( $this->base_path ) . $this->directory . '/includes/class-merlin-logger.php';
 		$this->logger = Merlin_Logger::get_instance();
 
@@ -333,7 +333,9 @@ class Merlin {
 		$this->importer = new ProteusThemes\WPContentImporter2\Importer( array( 'fetch_attachments' => true ), $this->logger );
 
 		require_once trailingslashit( $this->base_path ) . $this->directory . '/includes/class-merlin-widget-importer.php';
-		
+
+		require_once trailingslashit( $this->base_path ) . $this->directory . '/includes/class-merlin-buddypress-importer.php';
+
 		require_once trailingslashit( $this->base_path ) . $this->directory . '/includes/class-merlin-csframework-importer.php';
 
 		if ( ! class_exists( 'WP_Customize_Setting' ) ) {
@@ -421,6 +423,25 @@ class Merlin {
 		$this->hook_suffix = add_submenu_page(
 			esc_html( $this->parent_slug ), esc_html( $strings['admin-menu'] ), esc_html( $strings['admin-menu'] ), sanitize_key( $this->capability ), sanitize_key( $this->merlin_url ), array( $this, 'admin_page' )
 		);
+
+		if ( class_exists( 'buddypress' ) ) {
+			add_menu_page(
+					esc_html__('BuddyX Pro Demo Data', 'buddyx-demo-Importer'),
+					esc_html__('BuddyX Pro Demo Data', 'buddyx-demo-Importer'),
+					'manage_options',
+					'buddyx-demo-data',
+					array( $this, 'buddyx_bp_demo_data' ),
+					'dashicons-sticky'
+				);
+			add_submenu_page(
+					'buddyx-demo-data',
+					'Delete Demo Data',
+					'Delete Demo Data',
+					'manage_options',
+					'buddyx-demo-delete-data',
+					array( $this, 'buddyx_demo_data_delete' )
+				);
+		}
 	}
 
 	/**
@@ -723,6 +744,13 @@ class Merlin {
 			'view' => array( $this, 'child' ),
 		);
 
+		if ( count($this->import_files ) > 1 ) {
+			$this->steps['theme-demo'] = array(
+				'name' => esc_html__( 'Theme Demo', 'merlin-wp' ),
+				'view' => array( $this, 'theme_demo' ),
+			);
+		}
+
 		if ( $this->license_step_enabled ) {
 			$this->steps['license'] = array(
 				'name' => esc_html__( 'License', 'merlin-wp' ),
@@ -1020,6 +1048,72 @@ class Merlin {
 	}
 
 	/**
+	 * Page setup
+	 */
+	protected function theme_demo() {
+		$import_info = $this->get_import_data_info();
+
+		// Strings passed in from the config file.
+		$strings = $this->strings;
+
+		// Text strings.
+		$header    = $strings['import-demo'];
+		$paragraph = $strings['import-demo-content'];
+		$action    = $strings['import-action-link'];
+		$skip      = $strings['btn-skip'];
+		$next      = $strings['btn-next'];
+		$import    = $strings['btn-import'];
+
+		?>
+
+		<div class="merlin__content--transition">
+
+			<?php echo wp_kses( $this->svg( array( 'icon' => 'content' ) ), $this->svg_allowed_html() ); ?>
+
+			<svg class="icon icon--checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+				<circle class="icon--checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon--checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+			</svg>
+
+			<h1><?php echo esc_html( $header ); ?></h1>
+
+			<p><?php echo esc_html( $paragraph ); ?></p>
+
+			<?php if ( 1 < count( $this->import_files ) ) : ?>
+
+				<div class="merlin__select-control-wrapper">
+
+					<select id="merlin_select_import_demo" class="merlin__select-control merlin-demo-import-select">
+						<?php foreach ( $this->import_files as $index => $import_file ) : ?>
+							<option value="<?php echo esc_attr( $index ); ?>"><?php echo esc_html( $import_file['import_file_name'] ); ?></option>
+						<?php endforeach; ?>
+					</select>
+
+					<div class="merlin__select-control-help">
+						<span class="hint--top" aria-label="<?php echo esc_attr__( 'Select Demo', 'merlin-wp' ); ?>">
+							<?php echo wp_kses( $this->svg( array( 'icon' => 'downarrow' ) ), $this->svg_allowed_html() ); ?>
+						</span>
+					</div>
+				</div>
+			<?php endif; ?>
+
+		</div>
+
+		<footer class="merlin__content__footer">
+
+			<a id="close" href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--skip merlin__button--closer merlin__button--proceed"><?php echo esc_html( $skip ); ?></a>
+
+			<a id="skip" href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--skip merlin__button--proceed"><?php echo esc_html( $skip ); ?></a>
+
+			<a href="<?php echo esc_url( $this->step_next_link() ."&theme_demo=0" ); ?>" id="theme_demo_next" class="merlin__button merlin__button--next merlin__button--proceed merlin__button--colorchange"><?php echo esc_html( $next ); ?></a>
+			<?php wp_nonce_field( 'merlin' ); ?>
+		</footer>
+
+
+		<?php
+		$this->logger->debug( __( 'The content import step has been displayed', 'merlin-wp' ) );
+	}
+
+	/**
 	 * Theme plugins
 	 */
 	protected function plugins() {
@@ -1046,9 +1140,15 @@ class Merlin {
 		$required_plugins = $recommended_plugins = array();
 		$count            = count( $plugins['all'] );
 		$class            = $count ? null : 'no-plugins';
+		$theme_demo 	  = (isset($_GET['theme_demo']) && $_GET['theme_demo'] != '' ) ? $_GET['theme_demo'] : 0;
+		$import_plugins	  = $this->import_files[$theme_demo]['import_plugins'];
 
 		// Split the plugins into required and recommended.
 		foreach ( $plugins['all'] as $slug => $plugin ) {
+			if ( !in_array($slug, $import_plugins) ) {
+				continue;
+			}
+
 			if ( ! empty( $plugin['required'] ) ) {
 				$required_plugins[ $slug ] = $plugin;
 			} else {
@@ -1163,6 +1263,7 @@ class Merlin {
 		$skip      = $strings['btn-skip'];
 		$next      = $strings['btn-next'];
 		$import    = $strings['btn-import'];
+		$theme_demo 	  = (isset($_GET['theme_demo']) && $_GET['theme_demo'] != '' ) ? $_GET['theme_demo'] : 0;
 
 		$multi_import = ( 1 < count( $this->import_files ) ) ? 'is-multi-import' : null;
 		?>
@@ -1184,9 +1285,11 @@ class Merlin {
 				<div class="merlin__select-control-wrapper">
 
 					<select class="merlin__select-control js-merlin-demo-import-select">
-						<?php foreach ( $this->import_files as $index => $import_file ) : ?>
-							<option value="<?php echo esc_attr( $index ); ?>"><?php echo esc_html( $import_file['import_file_name'] ); ?></option>
-						<?php endforeach; ?>
+						<?php foreach ( $this->import_files as $index => $import_file ) :
+								if ( $theme_demo == $index ){?>
+								<option value="<?php echo esc_attr( $index ); ?>"><?php echo esc_html( $import_file['import_file_name'] ); ?></option>
+								<?php }
+						endforeach; ?>
 					</select>
 
 					<div class="merlin__select-control-help">
@@ -1826,6 +1929,7 @@ class Merlin {
 				);
 
 				$logs = call_user_func( $this_content['install_callback'], $this_content['data'] );
+
 				if ( $logs ) {
 					$json = array(
 						'done'    => 1,
@@ -1898,7 +2002,13 @@ class Merlin {
 		$selected_import = intval( $_POST['selected_index'] );
 		$import_files    = $this->get_import_files_paths( $selected_import );
 
-		wp_send_json_success( $this->importer->get_number_of_posts_to_import( $import_files['content'] ) );
+		$total_records = $this->importer->get_number_of_posts_to_import( $import_files['content'] ) + $this->importer->get_number_of_posts_to_import( $import_files['page-content'] );
+
+		if ( class_exists( 'woocommerce' ) ) {
+			$total_records = $total_records + $this->importer->get_number_of_posts_to_import( $import_files['products-content'] );
+		}
+		$total_records = $this->importer->get_number_of_posts_to_import( $import_files[$_POST['current_item']] ) ;
+		wp_send_json_success( $total_records );
 	}
 
 
@@ -1912,13 +2022,18 @@ class Merlin {
 	 */
 	public function get_import_data_info( $selected_import_index = 0 ) {
 		$import_data = array(
-			'content'      => false,
+			'content' => false,
+			'products-content'=> false,
+			'page-content' => false,
+			'buddypress'   => false,
 			'widgets'      => false,
 			'options'      => false,
 			'sliders'      => false,
 			'redux'        => false,
 			'after_import' => false,
 		);
+
+		$selected_import_index = ( isset($_GET['theme_demo']) && $_GET['theme_demo'] != '' ) ? $_GET['theme_demo'] : $selected_import_index ;
 
 		if ( empty( $this->import_files[ $selected_import_index ] ) ) {
 			return false;
@@ -1929,6 +2044,23 @@ class Merlin {
 			! empty( $this->import_files[ $selected_import_index ]['local_import_file'] )
 		) {
 			$import_data['content'] = true;
+		}
+
+		if (
+			! empty( $this->import_files[ $selected_import_index ]['import_page_file_url'] ) ||
+			! empty( $this->import_files[ $selected_import_index ]['local_import_page_file'] )
+		) {
+			$import_data['page-content'] = true;
+		}
+
+		if ( class_exists( 'woocommerce' ) &&
+			( ! empty( $this->import_files[ $selected_import_index ]['import_products_file_url'] ) ||
+			! empty( $this->import_files[ $selected_import_index ]['local_import_products_file'] ) )) {
+			$import_data['products-content'] = true;
+		}
+
+		if ( class_exists( 'buddypress' ) ) {
+			$import_data['buddypress'] = true;
 		}
 
 		if (
@@ -1951,7 +2083,7 @@ class Merlin {
 		) {
 			$import_data['sliders'] = true;
 		}
-		
+
 		if (
 			! empty( $this->import_files[ $selected_import_index ]['import_cs_framework_file_url'] ) ||
 			! empty( $this->import_files[ $selected_import_index ]['local_import_cs_framework_file'] )
@@ -1998,6 +2130,45 @@ class Merlin {
 				'data'             => $import_files['content'],
 			);
 		}
+		if ( ! empty( $import_files['page-content'] ) ) {
+			$content['page-content'] = array(
+				'title'            => esc_html__( 'Content', 'merlin-wp' ),
+				'description'      => esc_html__( 'Demo content data.', 'merlin-wp' ),
+				'pending'          => esc_html__( 'Pending', 'merlin-wp' ),
+				'installing'       => esc_html__( 'Installing', 'merlin-wp' ),
+				'success'          => esc_html__( 'Success', 'merlin-wp' ),
+				'checked'          => $this->is_possible_upgrade() ? 0 : 1,
+				'install_callback' => array( $this->importer, 'import' ),
+				'data'             => $import_files['page-content'],
+			);
+		}
+
+		if ( isset($_REQUEST['content']) && $_REQUEST['content'] == 'products-content' && ! empty( $import_files['products-content'] ) ) {
+			$content['products-content'] = array(
+				'title'            => esc_html__( 'Content', 'merlin-wp' ),
+				'description'      => esc_html__( 'Demo content data.', 'merlin-wp' ),
+				'pending'          => esc_html__( 'Pending', 'merlin-wp' ),
+				'installing'       => esc_html__( 'Installing', 'merlin-wp' ),
+				'success'          => esc_html__( 'Success', 'merlin-wp' ),
+				'checked'          => $this->is_possible_upgrade() ? 0 : 1,
+				'install_callback' => array( $this->importer, 'import' ),
+				'data'             => $import_files['products-content'],
+			);
+		}
+
+		if ( isset($_REQUEST['content']) && $_REQUEST['content'] == 'buddypress' ) {
+			$content['buddypress'] = array(
+				'title'            => esc_html__( 'Content', 'merlin-wp' ),
+				'description'      => esc_html__( 'Demo content data.', 'merlin-wp' ),
+				'pending'          => esc_html__( 'Pending', 'merlin-wp' ),
+				'installing'       => esc_html__( 'Installing', 'merlin-wp' ),
+				'success'          => esc_html__( 'Success', 'merlin-wp' ),
+				'checked'          => $this->is_possible_upgrade() ? 0 : 1,
+				'install_callback' => array( 'Merlin_BuddyPress_Importer', 'import_buddypress_demo_data' ),
+				'data'             => '',
+			);
+		}
+
 
 		if ( ! empty( $import_files['widgets'] ) ) {
 			$content['widgets'] = array(
@@ -2024,7 +2195,7 @@ class Merlin {
 				'data'             => $import_files['sliders'],
 			);
 		}
-		
+
 		if ( ! empty( $import_files['csframework'] ) ) {
 			$content['csframework'] = array(
 				'title'            => esc_html__( 'CSFramework', 'merlin-wp' ),
@@ -2037,7 +2208,7 @@ class Merlin {
 				'data'             => $import_files['csframework'],
 			);
 		}
-		
+
 		if ( ! empty( $import_files['options'] ) ) {
 			$content['options'] = array(
 				'title'            => esc_html__( 'Options', 'merlin-wp' ),
@@ -2050,7 +2221,7 @@ class Merlin {
 				'data'             => $import_files['options'],
 			);
 		}
-	
+
 		if ( ! empty( $import_files['redux'] ) ) {
 			$content['redux'] = array(
 				'title'            => esc_html__( 'Redux Options', 'merlin-wp' ),
@@ -2076,8 +2247,8 @@ class Merlin {
 				'data'             => $selected_import_index,
 			);
 		}
-		
-		
+
+
 		$content = apply_filters( 'merlin_get_base_content', $content, $this );
 
 		return $content;
@@ -2112,11 +2283,12 @@ class Merlin {
 	 * @return array The updated data.
 	 */
 	public function pt_importer_new_ajax_request_response_data( $data ) {
+
 		$data['url']      = admin_url( 'admin-ajax.php' );
 		$data['message']  = esc_html__( 'Installing', 'merlin-wp' );
 		$data['proceed']  = 'true';
 		$data['action']   = 'merlin_content';
-		$data['content']  = 'content';
+		$data['content']  = $_POST['content'];
 		$data['_wpnonce'] = wp_create_nonce( 'merlin_nonce' );
 		$data['hash']     = md5( rand() ); // Has to be unique (check JS code catching this AJAX response).
 
@@ -2128,13 +2300,22 @@ class Merlin {
 	 */
 	public function after_content_import_setup() {
 		// Set static homepage.
-		$homepage = get_page_by_title( apply_filters( 'merlin_content_home_page_title', 'Home' ) );
+		$homepage = get_page_by_title( apply_filters( 'merlin_content_home_page_title', 'Homepage' ) );
 
 		if ( $homepage ) {
 			update_option( 'page_on_front', $homepage->ID );
 			update_option( 'show_on_front', 'page' );
 
 			$this->logger->debug( __( 'The home page was set', 'merlin-wp' ), array( 'homepage_id' => $homepage ) );
+		}
+
+		$home = get_page_by_title( apply_filters( 'merlin_content_home_page_title', 'Home' ) );
+
+		if ( $home ) {
+			update_option( 'page_on_front', $home->ID );
+			update_option( 'show_on_front', 'page' );
+
+			$this->logger->debug( __( 'The home page was set', 'merlin-wp' ), array( 'homepage_id' => $home ) );
 		}
 
 		// Set static blog page.
@@ -2146,19 +2327,26 @@ class Merlin {
 
 			$this->logger->debug( __( 'The blog page was set', 'merlin-wp' ), array( 'blog_page_id' => $blogpage ) );
 		}
-		
+
 		/*
 		 * Assign Import Menus
 		 */
 		// Set imported menus to registered theme locations
-		
+
 		$locations = get_theme_mod( 'nav_menu_locations' ); // registered menu locations in theme
-		$registered_menus = wp_get_nav_menus(); // registered menus				
+		$registered_menus = wp_get_nav_menus(); // registered menus
 		// Assign Menu Name to Registered menus as array keys
 		foreach( $registered_menus as $menu ) {
-			
+
 			if ( $menu->slug == 'main-menu' && strtolower($menu->name) == strtolower('Main Menu') ) {
-				$locations['primary'] = $menu->term_id;				
+				$locations['primary'] = $menu->term_id;
+			}
+			if ( $menu->slug == 'primary-menu' && strtolower($menu->name) == strtolower('Primary Menu') ) {
+				$locations['primary'] = $menu->term_id;
+			}
+
+			if ( $menu->slug == 'user-menu' && strtolower($menu->name) == strtolower('User Menu') ) {
+				$locations['user_menu'] = $menu->term_id;
 			}
 		}
 		set_theme_mod( 'nav_menu_locations', $locations ); // set menus to locations
@@ -2243,6 +2431,8 @@ class Merlin {
 		$base_file_name = $this->import_file_base_name;
 		$import_files   = array(
 			'content' => '',
+			'page-content' => '',
+			'products-content' => '',
 			'widgets' => '',
 			'options' => '',
 			'redux'   => array(),
@@ -2273,6 +2463,56 @@ class Merlin {
 				$import_files['content'] = '';
 			}
 		}
+		/* Page Content  */
+		if ( empty( $selected_import_data['import_page_file_url'] ) ) {
+			if ( ! empty( $selected_import_data['local_import_page_file'] ) && file_exists( $selected_import_data['local_import_page_file'] ) ) {
+				$import_files['page-content'] = $selected_import_data['local_import_page_file'];
+			}
+		} else {
+			// Set the filename string for content import file.
+			$content_page_filename = 'content-page-' . $base_file_name . '.xml';
+
+			// Retrieve the content import file.
+			$import_files['page-content'] = $downloader->fetch_existing_file( $content_page_filename );
+
+			// Download the file, if it's missing.
+			if ( empty( $import_files['page-content'] ) ) {
+				$import_files['page-content'] = $downloader->download_file( $selected_import_data['import_page_file_url'], $content_page_filename );
+			}
+
+			// Reset the variable, if there was an error.
+			if ( is_wp_error( $import_files['page-content'] ) ) {
+				$import_files['page-content'] = '';
+			}
+
+		}
+
+		/* Products Content */
+		if ( empty( $selected_import_data['import_products_file_url'] ) ) {
+			if ( ! empty( $selected_import_data['local_import_products_file'] ) && file_exists( $selected_import_data['local_import_products_file'] ) ) {
+				$import_files['products-content'] = $selected_import_data['local_import_products_file'];
+			}
+		} else {
+			// Set the filename string for content import file.
+			$content_page_filename = 'content-products-' . $base_file_name . '.xml';
+
+			// Retrieve the content import file.
+			$import_files['products-content'] = $downloader->fetch_existing_file( $content_page_filename );
+
+			// Download the file, if it's missing.
+			if ( empty( $import_files['products-content'] ) ) {
+				$import_files['products-content'] = $downloader->download_file( $selected_import_data['import_products_file_url'], $content_page_filename );
+			}
+
+			// Reset the variable, if there was an error.
+			if ( is_wp_error( $import_files['products-content'] ) ) {
+				$import_files['products-content'] = '';
+			}
+
+		}
+
+
+
 
 		// Get widgets file as well. If defined!
 		if ( ! empty( $selected_import_data['import_widget_file_url'] ) ) {
@@ -2342,7 +2582,7 @@ class Merlin {
 				$import_files['sliders'] = $selected_import_data['local_import_rev_slider_file'];
 			}
 		}
-		
+
 		// Get CSFramework file as well. If defined!
 		if ( ! empty( $selected_import_data['import_cs_framework_file_url'] ) ) {
 			// Set the filename string for csframework_filename import file.
@@ -2445,11 +2685,16 @@ class Merlin {
 					continue;
 				}
 				?>
-
 				<li class="merlin__drawer--import-content__list-item status status--Pending" data-content="<?php echo esc_attr( $slug ); ?>">
-					<input type="checkbox" name="default_content[<?php echo esc_attr( $slug ); ?>]" class="checkbox checkbox-<?php echo esc_attr( $slug ); ?>" id="default_content_<?php echo esc_attr( $slug ); ?>" value="1" checked>
+					<input type="checkbox" name="default_content[<?php echo esc_attr( $slug ); ?>]" class="checkbox checkbox-<?php echo esc_attr( $slug ); ?>" id="default_content_<?php echo esc_attr( $slug ); ?>" value="1" checked >
 					<label for="default_content_<?php echo esc_attr( $slug ); ?>">
-						<i></i><span><?php echo esc_html( ucfirst( str_replace( '_', ' ', $slug ) ) ); ?></span>
+						<i></i><span><?php
+						if ( $slug == 'content') {
+							echo 'Post';
+						} else {
+							echo esc_html( ucfirst( trim(str_replace( ['-','_', 'content'], [' '], $slug ) ) ));
+						}?>
+						</span>
 					</label>
 				</li>
 
@@ -2466,5 +2711,321 @@ class Merlin {
 	public function import_finished() {
 		delete_transient( 'merlin_import_file_base_name' );
 		wp_send_json_success();
+	}
+
+	public function buddyx_bp_demo_data() {
+		?>
+
+		<div class="wrap" id="buddyx-default-data-page">
+			<style type="text/css">
+				ul li.users {
+					border-bottom: 1px solid #EEEEEE;
+					margin: 0 0 10px;
+					padding: 5px 0
+				}
+
+				ul li.users ul, ul li.groups ul {
+					margin: 5px 0 0 20px
+				}
+
+				#message ul.results li {
+					list-style: disc;
+					margin-left: 25px
+				}
+			</style>
+			<h1><?php esc_html_e( 'BuddyPress Default Data', 'buddyx-demo-Importer' ); ?></h1>
+
+			<?php
+			if ( ! empty( $_POST['buddyx-admin-clear'] ) ) {
+				buddyx_bp_clear_db();
+				echo '<div id="message" class="updated fade"><p>' . esc_html__( 'Everything created by this plugin was successfully deleted.', 'buddyx-demo-Importer' ) . '</p></div>';
+			}
+
+			if ( isset( $_POST['buddyx-admin-submit'] ) ) {
+				// Cound what we have just imported.
+				$imported = array();
+
+				// Check nonce before we do anything.
+				check_admin_referer( 'buddyx-admin' );
+
+				include_once __DIR__ . '/bp-process.php';
+
+				// Import users
+				if ( isset( $_POST['buddyx']['import-users'] ) && ! buddyx_bp_is_imported( 'users', 'users' ) ) {
+					$users             = buddyx_bp_import_users();
+					$imported['users'] = sprintf( /* translators: formatted number. */
+						esc_html__( '%s new users', 'buddyx-demo-Importer' ),
+						number_format_i18n( count( $users ) )
+					);
+					buddyx_bp_update_import( 'users', 'users' );
+				}
+
+				if ( isset( $_POST['buddyx']['import-profile'] ) && ! buddyx_bp_is_imported( 'users', 'xprofile' ) ) {
+					$profile             = buddyx_bp_import_users_profile();
+					$imported['profile'] = sprintf( /* translators: formatted number. */
+						esc_html__( '%s profile entries', 'buddyx-demo-Importer' ),
+						number_format_i18n( $profile )
+					);
+					buddyx_bp_update_import( 'users', 'xprofile' );
+				}
+
+				if ( isset( $_POST['buddyx']['import-friends'] ) && ! buddyx_bp_is_imported( 'users', 'friends' ) ) {
+					$friends             = buddyx_bp_import_users_friends();
+					$imported['friends'] = sprintf( /* translators: formatted number. */
+						esc_html__( '%s friends connections', 'buddyx-demo-Importer' ),
+						number_format_i18n( $friends )
+					);
+					buddyx_bp_update_import( 'users', 'friends' );
+				}
+
+
+				if ( isset( $_POST['buddyx']['import-activity'] ) && ! buddyx_bp_is_imported( 'users', 'activity' ) ) {
+					$activity             = buddyx_bp_import_users_activity();
+					$imported['activity'] = sprintf( /* translators: formatted number. */
+						esc_html__( '%s personal activity items', 'buddyx-demo-Importer' ),
+						number_format_i18n( $activity )
+					);
+					buddyx_bp_update_import( 'users', 'activity' );
+				}
+
+				// Import groups
+				if ( isset( $_POST['buddyx']['import-groups'] ) && ! buddyx_bp_is_imported( 'groups', 'groups' ) ) {
+					$groups             = buddyx_bp_import_groups();
+					$imported['groups'] = sprintf( /* translators: formatted number. */
+						esc_html__( '%s new groups', 'buddyx-demo-Importer' ),
+						number_format_i18n( count( $groups ) )
+					/* translators: formatted number. */ );
+					buddyx_bp_update_import( 'groups', 'groups' );
+				}
+				if ( isset( $_POST['buddyx']['import-g-members'] ) && ! buddyx_bp_is_imported( 'groups', 'members' ) ) {
+					$g_members             = buddyx_bp_import_groups_members();
+					$imported['g_members'] = sprintf( /* translators: formatted number. */
+						esc_html__( '%s groups members (1 user can be in several groups)', 'buddyx-demo-Importer' ),
+						number_format_i18n( count( $g_members ) )
+					);
+					buddyx_bp_update_import( 'groups', 'members' );
+				}
+
+				//if ( isset( $_POST['buddyx']['import-forums'] ) && ! buddyx_bp_is_imported( 'groups', 'forums' ) ) {
+				//	$forums             = buddyx_bp_import_groups_forums( $groups );
+				//	$imported['forums'] = sprintf( __( '%s groups forum topics', 'buddyx-demo-Importer' ), number_format_i18n( count( $forums ) ) );
+				//  buddyx_bp_update_import( 'groups', 'forums' );
+				//}
+
+				if ( isset( $_POST['buddyx']['import-g-activity'] ) && ! buddyx_bp_is_imported( 'groups', 'activity' ) ) {
+					$g_activity             = buddyx_bp_import_groups_activity();
+					$imported['g_activity'] = sprintf( /* translators: formatted number. */
+						esc_html__( '%s groups activity items', 'buddyx-demo-Importer' ),
+						number_format_i18n( $g_activity )
+					);
+					buddyx_bp_update_import( 'groups', 'activity' );
+				}
+				?>
+
+				<div id="message" class="updated fade">
+					<p>
+						<?php
+						esc_html_e( 'Data was successfully imported', 'buddyx-demo-Importer' );
+						if ( count( $imported ) > 0 ) {
+							echo ':<ul class="results"><li>';
+							echo implode( '</li><li>', $imported );
+							echo '</li></ul>';
+						} ?>
+					</p>
+				</div>
+
+				<?php
+			} ?>
+
+			<form action="" method="post" id="buddyx-admin-form">
+				<script type="text/javascript">
+					jQuery( document ).ready( function( $ ) {
+						$( '#import-profile, #import-friends, #import-activity' ).click( function() {
+							if ( $( this ).attr( 'checked' ) === 'checked' && !$( '#import-users' ).attr( 'disabled' ) ) {
+								$( '#import-users' ).attr( 'checked', 'checked' );
+							}
+						} );
+						$( '#import-users' ).click( function() {
+							if ( $( this ).attr( 'checked' ) !== 'checked' ) {
+								$( '#import-profile, #import-friends, #import-activity' ).removeAttr( 'checked' );
+							}
+						} );
+
+						$( '#import-forums, #import-g-members, #import-g-activity' ).click( function() {
+							if ( $( this ).attr( 'checked' ) === 'checked' && !$( '#import-groups' ).attr( 'disabled' ) ) {
+								$( '#import-groups' ).attr( 'checked', 'checked' );
+							}
+						} );
+						$( '#import-groups' ).click( function() {
+							if ( $( this ).attr( 'checked' ) !== 'checked' ) {
+								$( '#import-forums, #import-g-members, #import-g-activity' ).removeAttr( 'checked' );
+							}
+						} );
+
+						$( '#buddyx-admin-clear' ).click( function() {
+							if ( confirm( '<?php echo esc_js( esc_html__( 'Are you sure you want to delete all *imported* content - users, groups, messages, activities, forum topics etc? Content, that was created by you and others, and not by this plugin, will not be deleted.', 'buddyx-demo-Importer' ) ); ?>' ) ) {
+								return true;
+							}
+
+							return false;
+						} );
+
+						$( '#usage-tracking' ).click( function() {
+							var $checkbox = $( this );
+							$.ajax( {
+								 type: 'POST',
+								 url: ajaxurl,
+								 data: {
+									 action: 'buddyx_bp_ajax_usage_tracking_toggle',
+								 },
+								 beforeSend: function() {
+									 $checkbox.attr( 'disabled', true );
+								 },
+							 } )
+							 .always( function() {
+								 $checkbox.removeAttr( 'disabled' );
+							 } );
+						} );
+					} );
+				</script>
+
+				<p><?php esc_html_e( 'Please do not mess importing users and their data with groups on a slow server (or shared hosting). Importing is rather heavy process, so please finish with members first and then work with groups.', 'buddyx-demo-Importer' ); ?></p>
+
+				<h3><?php esc_html_e( 'What do you want to import?', 'buddyx-demo-Importer' ); ?></h3>
+
+				<ul class="items">
+					<li class="users">
+						<label for="import-users">
+							<input type="checkbox" name="buddyx[import-users]" id="import-users" value="1" <?php buddyx_bp_imported_disabled( 'users', 'users' ) ?>/>
+							<?php esc_html_e( 'Users', 'buddyx-demo-Importer' ); ?>
+
+							<span class="description"><?php echo wp_kses( __( '- all imported users have the same password: <code>1234567890</code>', 'buddyx-demo-Importer' ), array( 'code' => true ) ); ?></span>
+						</label>
+
+						<ul>
+							<?php if ( bp_is_active( 'xprofile' ) ) : ?>
+								<li>
+									<label for="import-profile">
+										<input type="checkbox" name="buddyx[import-profile]" id="import-profile"
+											value="1" <?php buddyx_bp_imported_disabled( 'users', 'xprofile' ) ?>/>
+										<?php esc_html_e( 'Profile data (profile groups and fields with values, won\'t generate activity records)', 'buddyx-demo-Importer' ); ?>
+									</label>
+								</li>
+							<?php endif; ?>
+
+							<?php if ( bp_is_active( 'friends' ) ) : ?>
+								<li>
+									<label for="import-friends">
+										<input type="checkbox" name="buddyx[import-friends]" id="import-friends"
+											value="1" <?php buddyx_bp_imported_disabled( 'users', 'friends' ) ?>/>
+										<?php esc_html_e( 'Friends connections', 'buddyx-demo-Importer' ); ?>
+									</label>
+								</li>
+							<?php endif; ?>
+
+							<?php if ( bp_is_active( 'activity' ) ) : ?>
+								<li>
+									<label for="import-activity">
+										<input type="checkbox" name="buddyx[import-activity]" id="import-activity"
+											value="1" <?php buddyx_bp_imported_disabled( 'users', 'activity' ) ?>/>
+										<?php esc_html_e( 'Activity posts', 'buddyx-demo-Importer' ); ?>
+									</label>
+								</li>
+							<?php endif; ?>
+
+						</ul>
+					</li>
+
+					<?php if ( bp_is_active( 'groups' ) ) : ?>
+						<li class="groups">
+							<label for="import-groups">
+								<input type="checkbox" name="buddyx[import-groups]" id="import-groups"
+									value="1" <?php buddyx_bp_imported_disabled( 'groups', 'groups' ) ?>/>
+								<?php esc_html_e( 'Groups', 'buddyx-demo-Importer' ); ?></label>
+							<ul>
+
+								<li>
+									<label for="import-g-members">
+										<input type="checkbox" name="buddyx[import-g-members]" id="import-g-members"
+											value="1" <?php buddyx_bp_imported_disabled( 'groups', 'members' ) ?>/>
+										<?php esc_html_e( 'Members', 'buddyx-demo-Importer' ); ?>
+									</label>
+								</li>
+
+								<?php if ( bp_is_active( 'activity' ) ) : ?>
+									<li>
+										<label for="import-g-activity">
+											<input type="checkbox" name="buddyx[import-g-activity]" id="import-g-activity"
+												value="1" <?php buddyx_bp_imported_disabled( 'groups', 'activity' ) ?>/>
+											<?php esc_html_e( 'Activity posts', 'buddyx-demo-Importer' ); ?>
+										</label>
+									</li>
+								<?php endif; ?>
+
+								<?php if ( bp_is_active( 'forums' ) && function_exists( 'bp_forums_is_installed_correctly' ) && bp_forums_is_installed_correctly() ) : ?>
+									<li>
+										<label for="import-forums">
+											<input type="checkbox" disabled name="buddyx[import-forums]" id="import-forums"
+												value="1" <?php buddyx_bp_imported_disabled( 'groups', 'forums' ) ?>/>
+											<?php esc_html_e( 'Forum topics and posts', 'buddyx-demo-Importer' ); ?>
+										</label>
+									</li>
+
+								<?php else: ?>
+									<li>
+										<?php
+										echo wp_kses(
+											__( '<strong>Note:</strong> You can\'t import anything forums-related, because Forum Component is not installed correctly. Please recheck your settings.', 'buddyx-demo-Importer' ),
+											array(
+												'strong' => true,
+											)
+										); ?>
+									</li>
+								<?php endif; ?>
+
+							</ul>
+						</li>
+					<?php endif; ?>
+
+				</ul>
+				<!-- .items -->
+
+				<p class="submit">
+					<input class="button-primary" type="submit" name="buddyx-admin-submit" id="buddyx-admin-submit"
+						value="<?php esc_attr_e( 'Import Selected Data', 'buddyx-demo-Importer' ); ?>" />
+					<input class="button" type="submit" name="buddyx-admin-clear" id="buddyx-admin-clear"
+						value="<?php esc_attr_e( 'Clear BuddyPress Data', 'buddyx-demo-Importer' ); ?>" />
+				</p>
+
+				<?php wp_nonce_field( 'buddyx-admin' ); ?>
+
+			</form>
+			<!-- #buddyx-admin-form -->
+		</div><!-- .wrap -->
+		<?php
+	}
+
+	public function buddyx_demo_data_delete() {
+
+		if ( ! empty( $_POST['buddyx-admin-clear'] ) ) {
+			if ( class_exists( 'buddypress' ) ) {
+				buddyx_bp_clear_db();
+			}
+			buddyx_demo_clear_db();
+			echo '<div id="message" class="updated fade"><p>' . esc_html__( 'Everything created by this plugin was successfully deleted.', 'buddyx-demo-Importer' ) . '</p></div>';
+		}
+		?>
+		<div class="wrap" id="buddyx-default-data-page">
+			<h1><?php esc_html_e( 'Delete BuddyX Pro Default Data', 'buddyx-demo-Importer' ); ?></h1>
+			<form action="" method="post" id="buddyx-admin-form">
+
+				<p class="submit">
+
+					<input class="button" type="submit" name="buddyx-admin-clear" id="buddyx-admin-clear" value="<?php esc_attr_e( 'Clear BuddyX Pro Default Data', 'buddyx-demo-Importer' ); ?>" />
+				</p>
+				<?php wp_nonce_field( 'buddyx-admin' ); ?>
+			</form>
+		</div>
+		<?php
 	}
 }

@@ -84,30 +84,44 @@ var Merlin = (function($){
             }
         });
 
-				$( document ).on( 'change', '.js-merlin-demo-import-select', function() {
-					var selectedIndex  = $( this ).val();
+		$( document ).on( 'change', '.js-merlin-demo-import-select', function() {
+			var selectedIndex  = $( this ).val();
 
-					$( '.js-merlin-select-spinner' ).show();
+			$( '.js-merlin-select-spinner' ).show();
 
-					$.post( merlin_params.ajaxurl, {
-						action: 'merlin_update_selected_import_data_info',
-						wpnonce: merlin_params.wpnonce,
-						selected_index: selectedIndex,
-					}, function( response ) {
-						if ( response.success ) {
-							$( '.js-merlin-drawer-import-content' ).html( response.data );
-						}
-						else {
-							alert( merlin_params.texts.something_went_wrong );
-						}
+			$.post( merlin_params.ajaxurl, {
+				action: 'merlin_update_selected_import_data_info',
+				wpnonce: merlin_params.wpnonce,
+				selected_index: selectedIndex,
+			}, function( response ) {
+				if ( response.success ) {
+					$( '.js-merlin-drawer-import-content' ).html( response.data );
+				}
+				else {
+					alert( merlin_params.texts.something_went_wrong );
+				}
 
-						$( '.js-merlin-select-spinner' ).hide();
-					} )
-						.fail( function() {
-							$( '.js-merlin-select-spinner' ).hide();
-							alert( merlin_params.texts.something_went_wrong )
-						} );
+				$( '.js-merlin-select-spinner' ).hide();
+			} )
+				.fail( function() {
+					$( '.js-merlin-select-spinner' ).hide();
+					alert( merlin_params.texts.something_went_wrong )
 				} );
+		} );
+		
+		var pre_theme_demo,selectedIndex;
+		$("#merlin_select_import_demo").on('focus, focusin', function () {
+			// Store the current value on focus and on change
+			pre_theme_demo = this.value;
+			
+		})
+		$(document).on('change', '#merlin_select_import_demo', function () {				
+			
+			selectedIndex  = $( this ).val();			
+			$('#theme_demo_next').attr('href',$('#theme_demo_next').attr('href').replace('theme_demo='+pre_theme_demo, 'theme_demo='+selectedIndex));
+			$( "#merlin_select_import_demo" ).blur();
+			
+		});
     }
 
     function ChildTheme() {
@@ -363,7 +377,7 @@ function PluginManager(){
                 }
 
                 if(typeof response.url !== "undefined"){
-                    // we have an ajax url action to perform.
+                    // we have an ajax url action to perform.					
                     if(response.hash === current_item_hash){
                         currentSpan.addClass("status--failed");
                         find_next();
@@ -420,10 +434,14 @@ function PluginManager(){
             }
             var $items = $(".merlin__drawer--import-content__list-item");
             var $enabled_items = $(".merlin__drawer--import-content__list-item input:checked");
-            $items.each(function(){
+			
+			
+            $items.each(function(){				
+				
                 if (current_item == "" || do_next) {
                     current_item = $(this).data("content");
                     $current_node = $(this);
+					init_content_import_progress_bar( current_item );
                     process_current();
                     do_next = false;
                 } else if ($(this).data("content") == current_item) {
@@ -435,21 +453,21 @@ function PluginManager(){
             }
         }
 
-        function init_content_import_progress_bar() {
-            if( ! $(".merlin__drawer--import-content__list-item .checkbox-content").is( ':checked' ) ) {
-                return false;
+        function init_content_import_progress_bar( current_item ) {
+            if( ! $(".merlin__drawer--import-content__list-item .checkbox-content").is( ':checked' ) && ! $(".merlin__drawer--import-content__list-item .checkbox-page-content").is( ':checked' ) ) {
+                //return false;
             }
-
-            jQuery.post(merlin_params.ajaxurl, {
+			
+            jQuery.post(merlin_params.ajaxurl + '?' + $( 'form#import-demo-content' ).serialize(), {
                 action: "merlin_get_total_content_import_items",
                 wpnonce: merlin_params.wpnonce,
+				current_item : current_item,
                 selected_index: $( '.js-merlin-demo-import-select' ).val() || 0
             }, function( response ) {
                 total_content_import_items = response.data;
 
                 if ( 0 < total_content_import_items ) {
                     update_progress_bar();
-
                     // Change the value of the progress bar constantly for a small amount (0,2% per sec), to improve UX.
                     progress_bar_interval = setInterval( function() {
                         current_content_import_items = current_content_import_items + total_content_import_items/500;
@@ -504,10 +522,10 @@ function PluginManager(){
 				    },3400);
 
                     setTimeout(function(){
-				        window.location.href=btn.href;
+						window.location.href=btn.href;
 				    },4000);
                 };
-                init_content_import_progress_bar();
+                //init_content_import_progress_bar();
                 find_next();
             }
         }
