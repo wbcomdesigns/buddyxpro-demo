@@ -100,7 +100,13 @@ add_action( 'bp_new_install_default_components', 'buddyxpro_demo_bp_default_comp
 function buddyxpro_demo_bp_default_components( $components  ) {
 	$components['groups'] 	= 1;
 	$components['friends'] 	= 1;
-	$components['messages'] = 1;		
+	$components['messages'] = 1;
 	return $components;
-		
 }
+
+require plugin_dir_path( __FILE__ ) . 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://demos.wbcomdesigns.com/exporter/free-plugins/buddyxpro-demo-importer.json',
+	__FILE__, // Full path to the main plugin file or functions.php.
+	'buddyxpro-demo-importer'
+);
