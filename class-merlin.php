@@ -1142,6 +1142,17 @@ class Merlin {
 		$class            = $count ? null : 'no-plugins';
 		$theme_demo 	  = (isset($_GET['theme_demo']) && $_GET['theme_demo'] != '' ) ? $_GET['theme_demo'] : 0;
 		$import_plugins	  = $this->import_files[$theme_demo]['import_plugins'];
+		$activate_plugins = array();
+		$plugin_need_activate = array();
+		if ( isset($this->import_files[$theme_demo]['required_activate_plugins'])) {
+			$activate_plugins = $this->import_files[$theme_demo]['required_activate_plugins'];
+			include_once ABSPATH . 'wp-admin/includes/plugin.php';
+			foreach( $activate_plugins as $key=>$value) {
+				if ( !is_plugin_active( $key ) ) {
+					$plugin_need_activate[] = $value;
+				} 
+			}
+		}
 
 		// Split the plugins into required and recommended.
 		foreach ( $plugins['all'] as $slug => $plugin ) {
@@ -1179,7 +1190,16 @@ class Merlin {
 			<h1><?php echo esc_html( $header ); ?></h1>
 
 			<p><?php echo esc_html( $paragraph ); ?></p>
-
+			
+			<?php if ( !empty($plugin_need_activate) && count($plugin_need_activate) == 1) :?>
+				<p class="merlin_plugin_error error"><?php echo sprintf(__( 'Please, first activate required plugin %s.', 'buddyx-demo-Importer'), implode(', ',$plugin_need_activate))?></p>
+			<?php endif;?>
+			
+			<?php if ( !empty($plugin_need_activate) && count($plugin_need_activate) > 1) :?>
+				<p class="merlin_plugin_error error"><?php echo sprintf(__( 'Please, first activate required plugins %s.', 'buddyx-demo-Importer'), implode(', ',$plugin_need_activate))?></p>
+			<?php endif;?>
+			
+			
 			<?php if ( $count ) { ?>
 				<a id="merlin__drawer-trigger" class="merlin__button merlin__button--knockout"><span><?php echo esc_html( $action ); ?></span><span class="chevron"></span></a>
 			<?php } ?>
@@ -1232,10 +1252,12 @@ class Merlin {
 				<?php if ( $count ) : ?>
 					<a id="close" href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--skip merlin__button--closer merlin__button--proceed"><?php echo esc_html( $skip ); ?></a>
 					<a id="skip" href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--skip merlin__button--proceed"><?php echo esc_html( $skip ); ?></a>
+					<?php if ( empty($plugin_need_activate) ):?>
 					<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--next button-next" data-callback="install_plugins">
 						<span class="merlin__button--loading__text"><?php echo esc_html( $install ); ?></span>
 						<?php echo wp_kses( $this->loading_spinner(), $this->loading_spinner_allowed_html() ); ?>
 					</a>
+					<?php endif;?>
 				<?php else : ?>
 					<a href="<?php echo esc_url( $this->step_next_link() ); ?>" class="merlin__button merlin__button--next merlin__button--proceed merlin__button--colorchange"><?php echo esc_html( $next ); ?></a>
 				<?php endif; ?>

@@ -142,6 +142,9 @@ function bdi_import_files() {
 			'import_notice'              => __( 'A special note for this import.', 'buddyx-demo-Importer' ),
 			'preview_url'                => 'https://www.example.com/my-demo-1',
 			'import_plugins'             => array( 'elementor', 'elementskit-lite', 'classic-widgets', 'kirki' ),
+			'required_activate_plugins'	 => array( 
+												'sfwd-lms/sfwd_lms.php' => 'LearnDash LMS'
+											),
 		),
 	);
 }
