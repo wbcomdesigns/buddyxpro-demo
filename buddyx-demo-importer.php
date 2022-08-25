@@ -85,6 +85,11 @@ function buddyx_demo_plugin_installer( $plugins ) {
 			'source'   => 'https://demos.wbcomdesigns.com/exporter/plugins/wbcom-essential/3.5.7/wbcom-essential.zip',
 			'required' => false,
 		);
+		$plugins[] = array(
+			'name'     => 'Dokan',
+			'slug'     => 'dokan-lite',
+			'required' => false,
+		);
 	}
 	return $plugins;
 }

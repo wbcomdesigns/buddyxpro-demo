@@ -121,6 +121,17 @@ function bdi_import_files() {
 			'preview_url'                => 'https://www.example.com/my-demo-1',
 			'import_plugins'             => array( 'elementor', 'classic-widgets', 'kirki', 'buddyboss-platform', 'woocommerce', 'wbcom-essential', 'groovy-menu' ),
 		),
+		array(
+			'import_file_name'           => 'BuddyX with Dokan',
+			'import_file_url'            => BDI_PLUGIN_URL . '/demos/buddyxpro/dokan/demo-content.xml',
+			'import_widget_file_url'     => BDI_PLUGIN_URL . '/demos/buddyxpro/dokan/widgets.json',
+			'import_customizer_file_url' => BDI_PLUGIN_URL . '/demos/buddyxpro/dokan/customizer.dat',
+			'import_redux'               => array(),
+			'import_preview_image_url'   => 'https://www.example.com/merlin/preview_import_image1.jpg',
+			'import_notice'              => __( 'A special note for this import.', 'buddyx-demo-Importer' ),
+			'preview_url'                => 'https://www.example.com/my-demo-1',
+			'import_plugins'             => array( 'elementor', 'classic-widgets', 'kirki', 'dokan-lite', 'woocommerce' ),
+		),
 	);
 }
 
