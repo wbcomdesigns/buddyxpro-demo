@@ -24,8 +24,9 @@
 	justify-content: center;
 }
 
-.merlin__body .xe-notice {
-	display: none;
+.merlin__body .xe-notice,
+.merlin__body .lp-overlay {
+    display: none;
 }
 
 .merlin_plugin_error.error {
