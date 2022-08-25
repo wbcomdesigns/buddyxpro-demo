@@ -90,6 +90,11 @@ function buddyx_demo_plugin_installer( $plugins ) {
 			'slug'     => 'dokan-lite',
 			'required' => false,
 		);
+		$plugins[] = array(
+			'name'     => 'ElementsKit Lite',
+			'slug'     => 'elementskit-lite',
+			'required' => false,
+		);
 	}
 	return $plugins;
 }
