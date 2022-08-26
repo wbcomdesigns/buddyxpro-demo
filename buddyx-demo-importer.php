@@ -105,6 +105,11 @@ function buddyx_demo_plugin_installer( $plugins ) {
 			'slug'     => 'learnpress',
 			'required' => false,
 		);
+		$plugins[] = array(
+			'name'     => 'LifterLMS',
+			'slug'     => 'lifterlms',
+			'required' => false,
+		);
 	}
 	return $plugins;
 }
