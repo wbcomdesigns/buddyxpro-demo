@@ -3,11 +3,11 @@
  * Plugin Name: BuddyX Demo Importer
  * Plugin URI: https://wbcomdesigns.com/
  * Description: BuddyX Theme Demo Importer
- * Version: 2.0.0
+ * Version: 2.1.0
  * Author: Wbcom Designs
  * Author URI: https://wbcomdesigns.com/
  * Requires at least: 4.0
- * Tested up to: 5.7.3
+ * Tested up to: 6.0.2
  *
  * Text Domain: buddyx-demo-Importer
  * Domain Path: /i18n/languages/
