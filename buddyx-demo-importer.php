@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: BuddyX Demo Importer
+ * Plugin Name: BuddyX Pro Demo Importer
  * Plugin URI: https://wbcomdesigns.com/
  * Description: BuddyX Theme Demo Importer
  * Version: 2.1.0
@@ -82,7 +82,7 @@ function buddyx_demo_plugin_installer( $plugins ) {
 		$plugins[] = array(
 			'name'     => 'Wbcom Essential',
 			'slug'     => 'wbcom-essential',
-			'source'   => 'https://demos.wbcomdesigns.com/exporter/plugins/wbcom-essential/3.5.7/wbcom-essential.zip',
+			'source'   => 'https://demos.wbcomdesigns.com/exporter/plugins/wbcom-essential/3.5.8/wbcom-essential.zip',
 			'required' => false,
 		);
 		$plugins[] = array(
