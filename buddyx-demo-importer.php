@@ -110,6 +110,11 @@ function buddyx_demo_plugin_installer( $plugins ) {
 			'slug'     => 'lifterlms',
 			'required' => false,
 		);
+		$plugins[] = array(
+			'name'     => 'WC Vendors Marketplace',
+			'slug'     => 'wc-vendors',
+			'required' => false,
+		);
 	}
 	return $plugins;
 }

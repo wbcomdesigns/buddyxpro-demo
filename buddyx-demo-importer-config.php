@@ -96,7 +96,7 @@ $wizard      = new Merlin(
 function bdi_import_files() {
 	return array(
 		array(
-			'import_file_name'           => 'BuddyX with BuddyPress',
+			'import_file_name'           => 'BuddyX Pro with BuddyPress',
 			'import_file_url'            => BDI_PLUGIN_URL . '/demos/buddyxpro/buddypress/demo-content.xml',
 			'import_page_file_url'       => BDI_PLUGIN_URL . '/demos/buddyxpro/buddypress/demo-page-content.xml',
 			'import_products_file_url'   => BDI_PLUGIN_URL . '/demos/buddyxpro/buddypress/demo-products-content.xml',
@@ -109,7 +109,7 @@ function bdi_import_files() {
 			'import_plugins'             => array( 'elementor', 'classic-widgets', 'kirki', 'buddypress', 'woocommerce', 'wbcom-essential', 'groovy-menu' ),
 		),
 		array(
-			'import_file_name'           => 'BuddyX with BB Platform',
+			'import_file_name'           => 'BuddyX Pro with BB Platform',
 			'import_file_url'            => BDI_PLUGIN_URL . '/demos/buddyxpro/bb-platform/demo-content.xml',
 			'import_page_file_url'       => BDI_PLUGIN_URL . '/demos/buddyxpro/bb-platform/demo-bb-page-content.xml',
 			'import_products_file_url'   => BDI_PLUGIN_URL . '/demos/buddyxpro/bb-platform/demo-products-content.xml',
@@ -122,7 +122,7 @@ function bdi_import_files() {
 			'import_plugins'             => array( 'elementor', 'classic-widgets', 'kirki', 'buddyboss-platform', 'woocommerce', 'wbcom-essential', 'groovy-menu' ),
 		),
 		array(
-			'import_file_name'           => 'BuddyX with Dokan',
+			'import_file_name'           => 'BuddyX Pro with Dokan',
 			'import_file_url'            => BDI_PLUGIN_URL . '/demos/buddyxpro/dokan/demo-content.xml',
 			'import_widget_file_url'     => BDI_PLUGIN_URL . '/demos/buddyxpro/dokan/widgets.json',
 			'import_customizer_file_url' => BDI_PLUGIN_URL . '/demos/buddyxpro/dokan/customizer.dat',
@@ -133,7 +133,7 @@ function bdi_import_files() {
 			'import_plugins'             => array( 'elementor', 'classic-widgets', 'kirki', 'dokan-lite', 'woocommerce' ),
 		),
 		array(
-			'import_file_name'           => 'BuddyX with LearnDash',
+			'import_file_name'           => 'BuddyX Pro with LearnDash',
 			'import_file_url'            => BDI_PLUGIN_URL . '/demos/buddyxpro/learndash/demo-content.xml',
 			'import_widget_file_url'     => BDI_PLUGIN_URL . '/demos/buddyxpro/learndash/widgets.json',
 			'import_customizer_file_url' => BDI_PLUGIN_URL . '/demos/buddyxpro/learndash/customizer.dat',
@@ -148,7 +148,7 @@ function bdi_import_files() {
 			),
 		),
 		array(
-			'import_file_name'           => 'BuddyX with LifterLMS',
+			'import_file_name'           => 'BuddyX Pro with LifterLMS',
 			'import_file_url'            => BDI_PLUGIN_URL . '/demos/buddyxpro/lifterlms/demo-content.xml',
 			'import_widget_file_url'     => BDI_PLUGIN_URL . '/demos/buddyxpro/lifterlms/widgets.json',
 			'import_customizer_file_url' => BDI_PLUGIN_URL . '/demos/buddyxpro/lifterlms/customizer.dat',
@@ -156,10 +156,10 @@ function bdi_import_files() {
 			'import_preview_image_url'   => 'https://www.example.com/merlin/preview_import_image1.jpg',
 			'import_notice'              => __( 'A special note for this import.', 'buddyx-demo-Importer' ),
 			'preview_url'                => 'https://www.example.com/my-demo-1',
-			'import_plugins'             => array( 'elementor', 'elementskit-lite', 'classic-widgets', 'kirki', 'lifterlms'),
+			'import_plugins'             => array( 'elementor', 'elementskit-lite', 'classic-widgets', 'kirki', 'lifterlms' ),
 		),
 		array(
-			'import_file_name'           => 'BuddyX with TutorLMS',
+			'import_file_name'           => 'BuddyX Pro with TutorLMS',
 			'import_file_url'            => BDI_PLUGIN_URL . '/demos/buddyxpro/tutorlms/demo-content.xml',
 			'import_widget_file_url'     => BDI_PLUGIN_URL . '/demos/buddyxpro/tutorlms/widgets.json',
 			'import_customizer_file_url' => BDI_PLUGIN_URL . '/demos/buddyxpro/tutorlms/customizer.dat',
@@ -170,7 +170,7 @@ function bdi_import_files() {
 			'import_plugins'             => array( 'elementor', 'classic-widgets', 'kirki', 'tutor', 'wbcom-essential' ),
 		),
 		array(
-			'import_file_name'           => 'BuddyX with LearnPress',
+			'import_file_name'           => 'BuddyX Pro with LearnPress',
 			'import_file_url'            => BDI_PLUGIN_URL . '/demos/buddyxpro/learnpress/demo-content.xml',
 			'import_widget_file_url'     => BDI_PLUGIN_URL . '/demos/buddyxpro/learnpress/widgets.json',
 			'import_customizer_file_url' => BDI_PLUGIN_URL . '/demos/buddyxpro/learnpress/customizer.dat',
@@ -179,6 +179,17 @@ function bdi_import_files() {
 			'import_notice'              => __( 'A special note for this import.', 'buddyx-demo-Importer' ),
 			'preview_url'                => 'https://www.example.com/my-demo-1',
 			'import_plugins'             => array( 'elementor', 'classic-widgets', 'kirki', 'learnpress', 'wbcom-essential' ),
+		),
+		array(
+			'import_file_name'           => 'BuddyX Pro with WC Vendors',
+			'import_file_url'            => BDI_PLUGIN_URL . '/demos/buddyxpro/wc-vendors/demo-content.xml',
+			'import_widget_file_url'     => BDI_PLUGIN_URL . '/demos/buddyxpro/wc-vendors/widgets.json',
+			'import_customizer_file_url' => BDI_PLUGIN_URL . '/demos/buddyxpro/wc-vendors/customizer.dat',
+			'import_redux'               => array(),
+			'import_preview_image_url'   => 'https://www.example.com/merlin/preview_import_image1.jpg',
+			'import_notice'              => __( 'A special note for this import.', 'buddyx-demo-Importer' ),
+			'preview_url'                => 'https://www.example.com/my-demo-1',
+			'import_plugins'             => array( 'elementor', 'classic-widgets', 'kirki', 'wc-vendors', 'wbcom-essential', 'woocommerce' ),
 		),
 	);
 }
