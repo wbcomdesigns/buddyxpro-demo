@@ -54,37 +54,37 @@ function buddyx_bp_clear_db() {
 
 function buddyx_demo_clear_db() {
 	$args = array(
-			'post_type'		=> ['any'],
-			'posts_per_page'=> -1,
-			'post_status'	=> ['any'],
-			'order' 		=> 'ASC',
-			'meta_key' 		=> '_demo_data_imported',
-			'meta_value'	=> 1
-		);
-		
-	$buddyx_demo_post = new WP_Query( $args );	
-	
-	if ( $buddyx_demo_post->have_posts()) {
-		while ( $buddyx_demo_post->have_posts() ){
+		'post_type'      => array( 'any' ),
+		'posts_per_page' => -1,
+		'post_status'    => array( 'any' ),
+		'order'          => 'ASC',
+		'meta_key'       => '_demo_data_imported',
+		'meta_value'     => 1,
+	);
+
+	$buddyx_demo_post = new WP_Query( $args );
+
+	if ( $buddyx_demo_post->have_posts() ) {
+		while ( $buddyx_demo_post->have_posts() ) {
 			$buddyx_demo_post->the_post();
-			wp_delete_post( get_the_id(), true);
+			wp_delete_post( get_the_id(), true );
 		}
 	}
 	/*  Delete Nav Menu itme*/
 	$args = array(
-			'post_type'		=> ['nav_menu_item'],
-			'posts_per_page'=> -1,
-			'post_status'	=> ['any'],
-			'order' 		=> 'ASC',
-			'meta_key' 		=> '_demo_data_imported',
-			'meta_value'	=> 1
-		);
-		
-	$buddyx_demo_post = new WP_Query( $args );		
-	if ( $buddyx_demo_post->have_posts()) {
-		while ( $buddyx_demo_post->have_posts() ){
+		'post_type'      => array( 'nav_menu_item' ),
+		'posts_per_page' => -1,
+		'post_status'    => array( 'any' ),
+		'order'          => 'ASC',
+		'meta_key'       => '_demo_data_imported',
+		'meta_value'     => 1,
+	);
+
+	$buddyx_demo_post = new WP_Query( $args );
+	if ( $buddyx_demo_post->have_posts() ) {
+		while ( $buddyx_demo_post->have_posts() ) {
 			$buddyx_demo_post->the_post();
-			wp_delete_post( get_the_id(), true);
+			wp_delete_post( get_the_id(), true );
 		}
 	}
 
@@ -201,9 +201,11 @@ function buddyx_bp_get_random_users_ids( $count = 1, $output = 'array' ) {
 		}
 	} else {
 		// Get by default (if no users were imported) all currently registered users.
-		$users = get_users( array(
-			                    'fields' => 'ID',
-		                    ) );
+		$users = get_users(
+			array(
+				'fields' => 'ID',
+			)
+		);
 	}
 
 	/*
@@ -320,6 +322,32 @@ function buddyx_bp_delete_import_records() {
 
 	bp_delete_option( 'buddyx_bp_imported_user_ids' );
 	bp_delete_option( 'buddyx_bp_imported_group_ids' );
-	
+
 	bp_delete_option( 'buddyx_bp_imported_user_xprofile_ids' );
+}
+
+/*
+ * Upload elementor background image in to wp and update image url and id
+ */
+add_action( 'wxr_importer.processed.post', 'update_elementor_background_image', 10, 5 );
+function update_elementor_background_image( $post_id, $data, $meta, $comments, $terms ) {
+	$_elementor_data = get_post_meta( $post_id, '_elementor_data', true );
+
+	if ( $_elementor_data != '' ) {
+		$_elementor_data = json_decode( $_elementor_data, true );
+		require_once ABSPATH . 'wp-admin' . '/includes/image.php';
+		require_once ABSPATH . 'wp-admin' . '/includes/file.php';
+		require_once ABSPATH . 'wp-admin' . '/includes/media.php';
+		foreach ( $_elementor_data as $key => $data ) {
+			if ( isset( $data['settings']['background_image']['url'] ) && $data['settings']['background_image']['url'] != '' ) {
+				$url      = $data['settings']['background_image']['url'];
+				$desc     = '';
+				$image    = media_sideload_image( $url, $post_id, $desc, 'src' );
+				$image_id = attachment_url_to_postid( $image );
+				$_elementor_data[ $key ]['settings']['background_image']['url'] = $image;
+				$_elementor_data[ $key ]['settings']['background_image']['id']  = $image_id;
+			}
+		}
+		update_post_meta( $post_id, '_elementor_data', json_encode( $_elementor_data ) );
+	}
 }
