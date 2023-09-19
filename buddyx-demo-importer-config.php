@@ -98,7 +98,7 @@ function bdi_import_files() {
 		array(
 			'import_file_name'           => 'BuddyX with BuddyPress',
 			'import_file_url'            => BDI_PLUGIN_URL . '/demos/buddyxpro/buddypress/demo-content.xml',
-			'import_page_file_url'       => BDI_PLUGIN_URL . '/demos/buddyxpro/buddypress/demo-page-content.xml',
+			// 'import_page_file_url'       => BDI_PLUGIN_URL . '/demos/buddyxpro/buddypress/demo-page-content.xml',
 			'import_products_file_url'   => BDI_PLUGIN_URL . '/demos/buddyxpro/buddypress/demo-products-content.xml',
 			'import_widget_file_url'     => BDI_PLUGIN_URL . '/demos/buddyxpro/buddypress/widgets.json',
 			'import_customizer_file_url' => BDI_PLUGIN_URL . '/demos/buddyxpro/buddypress/customizer.dat',
