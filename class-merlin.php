@@ -2370,6 +2370,10 @@ class Merlin {
 			if ( $menu->slug == 'user-menu' && strtolower($menu->name) == strtolower('User Menu') ) {
 				$locations['user_menu'] = $menu->term_id;
 			}
+
+			if ( $menu->slug == 'side-menu' && strtolower($menu->name) == strtolower('Side Menu') ) {
+				$locations['buddyx-panel'] = $menu->term_id;
+			}
 		}
 		set_theme_mod( 'nav_menu_locations', $locations ); // set menus to locations
 	}
