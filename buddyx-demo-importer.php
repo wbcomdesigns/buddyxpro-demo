@@ -76,7 +76,7 @@ function buddyx_demo_plugin_installer( $plugins ) {
 		$plugins[] = array(
 			'name'     => 'BuddyBoss Platform',
 			'slug'     => 'buddyboss-platform',
-			'source'   => https://github.com/buddyboss/buddyboss-platform/releases/download/2.4.40/buddyboss-platform-plugin.zip',
+			'source'   => 'https://github.com/buddyboss/buddyboss-platform/releases/download/2.4.40/buddyboss-platform-plugin.zip',
 			'required' => false,
 		);
 		$plugins[] = array(
