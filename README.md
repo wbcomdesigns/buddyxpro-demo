@@ -1,5 +1,8 @@
 # buddyx-demo
 
+= 2.1.2 =
+* Updated block widgets wie file
+
 = 2.1.1 = 
 * Updated XML Content
 
