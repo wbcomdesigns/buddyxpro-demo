@@ -369,7 +369,9 @@ function PluginManager(){
         function ajax_callback(response) {
             var currentSpan = $current_node.find("label");
             if(typeof response == "object" && typeof response.message !== "undefined"){
-                currentSpan.addClass(response.message.toLowerCase());
+		    if( response.message ) {
+		    currentSpan.addClass(response.message.toLowerCase());
+		}
 
                 if( typeof response.num_of_imported_posts !== "undefined" && 0 < total_content_import_items ) {
                     current_content_import_items = 'all' === response.num_of_imported_posts ? total_content_import_items : response.num_of_imported_posts;
