@@ -29,13 +29,18 @@ if ( ! function_exists( 'bdi_file_includes' ) ) {
 	add_action( 'init', 'bdi_file_includes' );
 
 	function bdi_file_includes() {
-		require_once BDI_PLUGIN_PATH . 'vendor/autoload.php';
-		require_once BDI_PLUGIN_PATH . 'class-merlin.php';
-		require_once BDI_PLUGIN_PATH . 'includes/buddyx-demo-functions.php';
-		require_once BDI_PLUGIN_PATH . 'buddyx-demo-importer-config.php';
+		require_once BDI_PLUGIN_PATH . 'vendor/autoload.php';		
+		require_once BDI_PLUGIN_PATH . 'includes/buddyx-demo-functions.php';		
 	}
 }
 
+if ( !class_exists( 'OCDI_Plugin' ) && ! is_plugin_active( 'one-click-demo-import/one-click-demo-import.php' )) {
+	require_once BDI_PLUGIN_PATH . 'includes/one-click-demo-import/one-click-demo-import.php';
+}
+
+if ( file_exists( BDI_PLUGIN_PATH . 'buddyx-demo-importer-config.php' ) ) {				
+	require_once BDI_PLUGIN_PATH . 'buddyx-demo-importer-config.php';			
+}
 /*
  * redirect Theme Setup Wizard setting page after plugin activated
  */
@@ -48,12 +53,12 @@ function bdi_activated_plugin_redirect( $plugin ) {
 		if ( isset( $_GET['page'] ) && $_GET['page'] == 'tgmpa-install-plugins' ) {
 			?>
 			<script>
-				window.location = "<?php echo admin_url( 'themes.php?page=buddyx-sample-demo-import' ); ?>";
+				window.location = "<?php echo admin_url( 'themes.php?page=one-click-demo-import' ); ?>";
 			</script>
 			<?php
 			wp_die();
 		} else {
-			wp_redirect( admin_url( 'themes.php?page=buddyx-sample-demo-import' ) );
+			wp_redirect( admin_url( 'themes.php?page=one-click-demo-import' ) );
 			exit;
 		}
 	}
@@ -132,3 +137,29 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	__FILE__, // Full path to the main plugin file or functions.php.
 	'buddyxpro-demo-importer'
 );
+
+
+/**
+ *  Check if buddypress activate.
+ */
+function buddyx_demo_reactions_requires_buddyx() {
+	$theme_name = wp_get_theme();
+		
+	if (  'buddyx-pro' !== $theme_name->template ) {
+		deactivate_plugins( plugin_basename( __FILE__ ) );
+		add_action( 'admin_notices', 'buddyx_demo_reactions_required_theme_admin_notice' );
+		unset( $_GET['activate'] );
+	}
+}
+add_action( 'admin_init', 'buddyx_demo_reactions_requires_buddyx' );
+
+function buddyx_demo_reactions_required_theme_admin_notice() {
+	$bpreaction_plugin 	= esc_html__( ' BuddyX Pro  Demo Importer', 'buddyx-demo-Importer' );
+	$bp_theme       	= esc_html__( 'BuddyX Pro ', 'buddyx-demo-Importer' );
+	echo '<div class="error"><p>';
+	echo sprintf( esc_html__( '%1$s is ineffective now as it requires %2$s theme to be installed and active.', 'buddyx-demo-Importer' ), '<strong>' . esc_html( $bpreaction_plugin ) . '</strong>', '<strong>' . esc_html( $bp_theme ) . '</strong>' );
+	echo '</p></div>';
+	if ( isset( $_GET['activate'] ) ) {
+		unset( $_GET['activate'] );
+	}
+}
