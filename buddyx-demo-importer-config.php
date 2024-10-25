@@ -204,6 +204,15 @@ function bdi_ocdi_register_plugins( $plugins ) {
 		}
 		
 		if ( $_GET['import'] === '3' ) {
+			
+			$theme_plugins[] = array(
+				'name'     => 'ElementsKit Lite',
+				'slug'     => 'elementskit-lite',
+				'required' => true,
+			);
+		}
+		
+		if ( $_GET['import'] === '6' ) {
 		  
 			$theme_plugins[] = array(
 				'name'     => 'ElementsKit Lite',
