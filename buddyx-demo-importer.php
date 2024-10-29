@@ -34,8 +34,10 @@ if ( ! function_exists( 'bdi_file_includes' ) ) {
 	}
 }
 
-if ( !class_exists( 'OCDI_Plugin' ) && ! is_plugin_active( 'one-click-demo-import/one-click-demo-import.php' )) {
-	require_once BDI_PLUGIN_PATH . 'includes/one-click-demo-import/one-click-demo-import.php';
+if ( is_admin() ) {
+	if ( !class_exists( 'OCDI_Plugin' ) && ! is_plugin_active( 'one-click-demo-import/one-click-demo-import.php' )) {
+		require_once BDI_PLUGIN_PATH . 'includes/one-click-demo-import/one-click-demo-import.php';
+	}
 }
 
 if ( file_exists( BDI_PLUGIN_PATH . 'buddyx-demo-importer-config.php' ) ) {				
