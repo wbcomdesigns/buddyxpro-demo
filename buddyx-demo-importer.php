@@ -35,6 +35,7 @@ if ( ! function_exists( 'bdi_file_includes' ) ) {
 }
 
 if ( is_admin() ) {
+	include_once ABSPATH . 'wp-admin/includes/plugin.php';
 	if ( !class_exists( 'OCDI_Plugin' ) && ! is_plugin_active( 'one-click-demo-import/one-click-demo-import.php' )) {
 		require_once BDI_PLUGIN_PATH . 'includes/one-click-demo-import/one-click-demo-import.php';
 	}
