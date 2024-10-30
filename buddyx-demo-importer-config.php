@@ -173,7 +173,7 @@ function bdi_ocdi_register_plugins( $plugins ) {
 	if ( ( isset( $_GET['step'] ) && $_GET['step'] === 'import' && isset( $_GET['import'] ) ) || ( isset($_POST['slug']) && $_POST['slug'] != '' ) ) {
  
 		// Adding one additional plugin for the first demo import ('import' number = 0).
-		if ( $_GET['import'] === '0' ) {
+		if ( isset($_GET['import']) && $_GET['import'] === '0' ) {
 		  
 			$theme_plugins[] = array(
 				'name'     => 'BuddyPress',

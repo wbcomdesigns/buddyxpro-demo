@@ -50,7 +50,12 @@ if ( file_exists( BDI_PLUGIN_PATH . 'buddyx-demo-importer-config.php' ) ) {
 add_action( 'activated_plugin', 'bdi_activated_plugin_redirect' );
 
 function bdi_activated_plugin_redirect( $plugin ) {
-
+	
+	$theme_name = wp_get_theme();
+	if ( 'buddyx-pro' !== $theme_name->template  ) {
+		return;
+	}
+	
 	if ( $plugin == plugin_basename( __FILE__ ) ) {
 
 		if ( isset( $_GET['page'] ) && $_GET['page'] == 'tgmpa-install-plugins' ) {
