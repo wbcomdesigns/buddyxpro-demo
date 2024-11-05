@@ -92,6 +92,18 @@ $theme            = wp_get_theme();
 										?>
 									</p>
 								</div>
+								<div class="ocdi-content-notice ocdi-content-notice--warning">
+									<p>
+										<?php
+											printf(
+												esc_html__(
+													'Suggestion: Update the permalink structure after the demo import is completed successfully.',
+													'one-click-demo-import'
+												),
+											);
+										?>
+									</p>
+								</div>
 							<?php endif; ?>
 						</div>
 						<div class="ocdi-install-plugins-content-footer">
