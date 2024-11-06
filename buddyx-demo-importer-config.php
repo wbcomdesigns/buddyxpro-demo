@@ -183,7 +183,7 @@ function bdi_ocdi_register_plugins( $plugins ) {
 			);
 		}
 	
-		if ( ( isset( $_GET['import'] ) && ( $_GET['import'] === '0' || $_GET['import'] === '1' || $_GET['import'] === '2' || $_GET['import'] === '5' ) ) || ( isset($_POST['slug']) && $_POST['slug'] === 'wbcom-essential' ) ) {
+		if ( ( isset( $_GET['import'] ) && ( $_GET['import'] === '0' || $_GET['import'] === '1' || $_GET['import'] === '2' || $_GET['import'] === '3' || $_GET['import'] === '4' || $_GET['import'] === '5' || $_GET['import'] === '6' ) ) || ( isset($_POST['slug']) && $_POST['slug'] === 'wbcom-essential' ) ) {
 		  
 			$theme_plugins[] = array(
 				'name'     => 'Wbcom Essential',
