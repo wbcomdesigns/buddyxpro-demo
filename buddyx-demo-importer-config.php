@@ -88,7 +88,7 @@ function bdi_ocdi_import_files( ) {
 		'local_import_widget_file'     	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/dokan/widgets.json',
 		'local_import_customizer_file' 	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/dokan/customizer.dat',
 		'local_import_redux'            => [],
-		'import_preview_image_url'   	=> 'https://buddyxtheme.com/wp-content/uploads/2020/12/buddyx-dokan-1.jpg',
+		'import_preview_image_url'   	=> 'https://buddyxtheme.com/wp-content/uploads/2023/01/BuddyX-Pro-with-Dokan-Pro.png',
 		'import_notice'              	=> '',
 		'preview_url'                	=> 'https://lms-demos.buddyxtheme.com/dokan-pro/',
 		'import_plugins'             	=> [ 'elementor', 'classic-widgets', 'kirki', 'dokan-lite', 'woocommerce' ],
