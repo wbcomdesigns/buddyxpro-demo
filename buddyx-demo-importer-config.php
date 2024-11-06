@@ -103,7 +103,7 @@ function bdi_ocdi_import_files( ) {
 		'import_preview_image_url'   	=> 'https://buddyxtheme.com/wp-content/uploads/2023/01/BuddyX-Pro-with-LearnDash.png',
 		'import_notice'              	=> __( 'Please install and activate LearnDash LMS and LearnDash LMS - Course Grid plugin before import demo.', 'buddyx-demo-Importer' ),
 		'preview_url'                	=> 'https://lms-demos.buddyxtheme.com/pro-learndash/',
-		'import_plugins'             	=> [ 'elementor', 'elementskit-lite', 'classic-widgets', 'kirki' ],
+		'import_plugins'             	=> [ 'elementor', 'elementskit-lite', 'classic-widgets', 'kirki', 'wbcom-essential' ],
 		'required_plugins'  			=> [
 												'sfwd-lms/sfwd_lms.php' => 'LearnDash LMS',
 												'learndash-course-grid/learndash_course_grid.php' => 'LearnDash LMS - Course Grid',
@@ -119,7 +119,7 @@ function bdi_ocdi_import_files( ) {
 		'import_preview_image_url'   	=> 'https://buddyxtheme.com/wp-content/uploads/2023/01/BuddyX-Pro-with-LifterLMS.png',
 		'import_notice'              	=> '',
 		'preview_url'                	=> 'https://lms-demos.buddyxtheme.com/pro-lifterlms',
-		'import_plugins'             	=> [ 'elementor', 'elementskit-lite', 'classic-widgets', 'kirki', 'lifterlms' ],
+		'import_plugins'             	=> [ 'elementor', 'elementskit-lite', 'classic-widgets', 'kirki', 'lifterlms', 'wbcom-essential' ],
     ],	
 	[
 		'import_file_name'           	=> 'BuddyX with TutorLMS',
