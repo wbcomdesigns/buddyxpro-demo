@@ -116,7 +116,7 @@ function bdi_ocdi_import_files( ) {
 		'local_import_widget_file'     	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/lifterlms/widgets.json',
 		'local_import_customizer_file' 	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/lifterlms/customizer.dat',
 		'local_import_redux'            => [],
-		'import_preview_image_url'   	=> 'https://buddyxtheme.com/wp-content/uploads/2020/12/buddyx-demo-lifterlms.jpg',
+		'import_preview_image_url'   	=> 'https://buddyxtheme.com/wp-content/uploads/2023/01/BuddyX-Pro-with-LifterLMS.png',
 		'import_notice'              	=> '',
 		'preview_url'                	=> 'https://lms-demos.buddyxtheme.com/pro-lifterlms',
 		'import_plugins'             	=> [ 'elementor', 'elementskit-lite', 'classic-widgets', 'kirki', 'lifterlms' ],
