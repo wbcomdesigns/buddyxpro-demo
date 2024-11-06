@@ -100,7 +100,7 @@ function bdi_ocdi_import_files( ) {
 		'local_import_widget_file'     	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/learndash/widgets.json',
 		'local_import_customizer_file' 	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/learndash/customizer.dat',
 		'local_import_redux'            => [],
-		'import_preview_image_url'   	=> 'https://buddyxtheme.com/wp-content/uploads/2021/05/pro-learndash.png',
+		'import_preview_image_url'   	=> 'https://buddyxtheme.com/wp-content/uploads/2023/01/BuddyX-Pro-with-LearnDash.png',
 		'import_notice'              	=> __( 'Please install and activate LearnDash LMS and LearnDash LMS - Course Grid plugin before import demo.', 'buddyx-demo-Importer' ),
 		'preview_url'                	=> 'https://lms-demos.buddyxtheme.com/pro-learndash/',
 		'import_plugins'             	=> [ 'elementor', 'elementskit-lite', 'classic-widgets', 'kirki' ],
