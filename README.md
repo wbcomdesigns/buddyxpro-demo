@@ -1,23 +1,50 @@
-# buddyx-demo
+=== BuddyX Pro Demo Importer ===
+Contributors: wbcomdesigns  
+Tags: demo importer, one-click import, BuddyX theme, demo content  
+Requires at least: 4.0  
+Tested up to: 6.7.1 
+Stable tag: 3.0.0  
+Requires PHP: 5.6  
+License: GPLv2 or later  
+License URI: https://www.gnu.org/licenses/gpl-2.0.html  
 
-= 2.1.2 =
-* Updated block widgets wie file
+BuddyX Pro Demo Importer plugin simplifies setting up demo content for the BuddyX theme with a one-click import feature.
 
-= 2.1.1 = 
-* Updated XML Content
+== Description ==
+BuddyX Pro Demo Importer provides an effortless way to import demo content for the BuddyX theme. It includes a variety of demo templates for popular WordPress plugins such as LearnPress, Tutor LMS, LifterLMS, Dokan, and more. With its one-click import feature, users can quickly set up their websites to match demo layouts.
 
-= 2.1.0 = 
-* Fix: Added lifterlms demo importer files
-* Fix: Added learnpress demo importer files
-* Fix: Update tutorlms demo-content files
-* Fix: Added tutorlms demo importer files
-* Fix: Update paid plugins list and notice UI
-* Fix: Display Error message for activate first Paid required plugins
-* Fix: Added learndash demo importer files
-* Fix: Added demo import files for dokan
-* Fix: Separate demo content files
+== Installation ==
+1. Upload the plugin files to the `/wp-content/plugins/buddyx-demo-importer/` directory, or install the plugin through the WordPress plugins screen directly.
+2. Activate the plugin through the 'Plugins' screen in WordPress.
+3. Go to the BuddyX Demo Importer settings page to select and import demo content.
 
-= 2.0.0 = 
-* Fix:  Demo File updates
-* New Feature: Multiple Demo Data support
-* New Feature: Added support for BuddyPress Demo Data
+== Frequently Asked Questions ==
+= Does this plugin work only with BuddyX? =  
+Yes, this plugin is specifically designed for the BuddyX theme.
+
+= What plugins are supported for demo imports? =  
+The plugin supports LearnPress, Tutor LMS, LifterLMS, LearnDash, Dokan, and other popular WordPress plugins.
+
+= Can I import demo content with one click? =  
+Yes, the plugin includes a one-click demo import feature.
+
+== Changelog ==
+
+= 3.0.0 =
+* Added WbCom Essential to demo plugins list.
+* Updated import plugins list for smoother setup.
+* Updated versions for WbCom Essential and BuddyBoss Platform.
+* Updated LearnPress, Tutor LMS, LifterLMS, and LearnDash demo content files.
+* Updated Dokan demo content for improved compatibility.
+* Added suggestion notice for updating permalink structure.
+* Fixed plugin activation and undefined index notices.
+* Resolved fatal error related to `plugin.php` file inclusion.
+* Fixed `is_plugin_active` plugin issue.
+* Replaced custom menu link URLs with preview URLs.
+* Addressed notice and warning issues.
+* Removed unused images to optimize resources.
+* Updated BuddyX Pro demo importer with One Click Demo Import for seamless user experience.
+
+== Upgrade Notice ==
+= 3.0.0 =
+This update includes essential bug fixes, compatibility updates, and improved demo import functionality. Updating is recommended.
