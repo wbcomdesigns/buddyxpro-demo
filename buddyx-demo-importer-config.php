@@ -54,7 +54,7 @@ function bdi_remove_admin_init() {
 function bdi_ocdi_import_files( ) {	
   return [
     [
-		'import_file_name'             	=> 'BuddyX with BuddyPress',
+		'import_file_name'             	=> 'BuddyX Pro with BuddyPress',
 		'categories'                   	=> [],		
 		'local_import_file'            	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/buddypress/demo-content.xml',		
 		'local_import_products_file'	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/buddypress/demo-products-content.xml',
@@ -64,11 +64,11 @@ function bdi_ocdi_import_files( ) {
 		'import_preview_image_url'   	=> 'https://buddyxtheme.com/wp-content/uploads/2020/12/buddy-demo-bp.jpg',
 		'import_notice'              	=> '',
 		'preview_url'                	=> 'https://pro.buddyxtheme.com/',
-		'import_plugins'             	=> [ 'elementor', 'kirki', 'buddypress', 'woocommerce', 'wbcom-essential', 'groovy-menu' ],
+		'import_plugins'             	=> [ 'elementor', 'kirki', 'buddypress', 'woocommerce', 'wbcom-essential' ],
 
     ],
     [
-		'import_file_name'           	=> 'BuddyX with BB Platform',
+		'import_file_name'           	=> 'BuddyX Pro with BuddyBoss',
 		'categories'                   	=> [],
 		'local_import_file'            	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/bb-platform/demo-content.xml',
 		'local_import_page_file'    	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/bb-platform/demo-bb-page-content.xml',
@@ -79,10 +79,10 @@ function bdi_ocdi_import_files( ) {
 		'import_preview_image_url'   	=> 'https://buddyxtheme.com/wp-content/uploads/2020/12/probuddyx-demo.jpg',
 		'import_notice'              	=> '',
 		'preview_url'                	=> 'https://bb-pro.buddyxtheme.com/',
-		'import_plugins'             	=> [  'elementor', 'classic-widgets', 'kirki', 'buddyboss-platform', 'woocommerce', 'wbcom-essential', 'groovy-menu' ],
+		'import_plugins'             	=> [  'elementor', 'classic-widgets', 'kirki', 'buddyboss-platform', 'woocommerce', 'wbcom-essential' ],
     ],	
 	[
-		'import_file_name'           	=> 'BuddyX with Dokan',
+		'import_file_name'           	=> 'BuddyX Pro with Dokan',
 		'categories'                   	=> [],
 		'local_import_file'            	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/dokan/demo-content.xml',		
 		'local_import_widget_file'     	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/dokan/widgets.json',
@@ -94,7 +94,7 @@ function bdi_ocdi_import_files( ) {
 		'import_plugins'             	=> [ 'elementor', 'classic-widgets', 'kirki', 'dokan-lite', 'woocommerce' ],
     ],	
 	[
-		'import_file_name'           	=> 'BuddyX with LearnDash',
+		'import_file_name'           	=> 'BuddyX Pro with LearnDash',
 		'categories'                   	=> [],
 		'local_import_file'            	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/learndash/demo-content.xml',		
 		'local_import_widget_file'     	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/learndash/widgets.json',
@@ -110,7 +110,7 @@ function bdi_ocdi_import_files( ) {
 											],
     ],	
 	[
-		'import_file_name'           	=> 'BuddyX with LifterLMS',
+		'import_file_name'           	=> 'BuddyX Pro with LifterLMS',
 		'categories'                   	=> [],
 		'local_import_file'            	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/lifterlms/demo-content.xml',		
 		'local_import_widget_file'     	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/lifterlms/widgets.json',
@@ -122,7 +122,7 @@ function bdi_ocdi_import_files( ) {
 		'import_plugins'             	=> [ 'elementor', 'elementskit-lite', 'classic-widgets', 'kirki', 'lifterlms', 'wbcom-essential' ],
     ],	
 	[
-		'import_file_name'           	=> 'BuddyX with TutorLMS',
+		'import_file_name'           	=> 'BuddyX Pro with TutorLMS',
 		'categories'                   	=> [],
 		'local_import_file'            	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/tutorlms/demo-content.xml',		
 		'local_import_widget_file'     	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/tutorlms/widgets.json',
@@ -134,7 +134,7 @@ function bdi_ocdi_import_files( ) {
 		'import_plugins'             	=> [ 'elementor', 'classic-widgets', 'kirki', 'tutor', 'wbcom-essential' ],
     ],	
 	[
-		'import_file_name'           	=> 'BuddyX with LearnPress',
+		'import_file_name'           	=> 'BuddyX Pro with LearnPress',
 		'categories'                   	=> [],
 		'local_import_file'            	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/learnpress/demo-content.xml',		
 		'local_import_widget_file'     	=> BDI_PLUGIN_PATH . '/demos/buddyxpro/learnpress/widgets.json',
