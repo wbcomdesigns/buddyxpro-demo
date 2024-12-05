@@ -47,6 +47,21 @@ function bdi_remove_admin_init() {
 	}
 }
 
+function bdi_ocdi_lms_redirect_flag() {
+	if ( ( isset( $_GET['page'] )
+		&& (
+			$_GET['page'] == 'buddyx-sample-demo-import'
+			|| $_GET['page'] == 'tgmpa-install-plugins'
+			|| $_GET['page'] == 'one-click-demo-import'
+			) )
+
+			|| ( isset( $_REQUEST['action'] ) && $_REQUEST['action'] == 'ocdi_install_plugin' )
+
+		) {
+		add_filter( 'learndash_setup_wizard_should_display', '__return_false', 99 );
+	}
+}
+add_action( 'learndash_activated', 'bdi_ocdi_lms_redirect_flag', 0 );
 
 /*
  *One Click Demo Import
@@ -180,6 +195,20 @@ function bdi_ocdi_register_plugins( $plugins ) {
 				'slug'     => 'buddypress',
 				'required' => true,
 				
+			);
+		}
+
+		if ( isset( $_GET['import'] ) && $_GET['import'] === '3' ) {
+			$theme_plugins[] = array(
+				'name'     => 'LearnDash LMS',
+				'slug'     => 'sfwd-lms',
+				'required' => true,
+			);
+		
+			$theme_plugins[] = array(
+				'name'     => 'LearnDash LMS - Course Grid',
+				'slug'     => 'learndash-course-grid',
+				'required' => true,
 			);
 		}
 	
