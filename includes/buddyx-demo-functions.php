@@ -69,23 +69,18 @@ function buddyx_demo_clear_db() {
 			$buddyx_demo_post->the_post();
 			wp_delete_post( get_the_id(), true);
 		}
+		wp_reset_postdata(); // Reset the post data to avoid conflicts
 	}
+	
 	/*  Delete Nav Menu itme*/
-	$args = array(
-			'post_type'		=> ['nav_menu_item'],
-			'posts_per_page'=> -1,
-			'post_status'	=> ['any'],
-			'order' 		=> 'ASC',
-			'meta_key' 		=> '_demo_data_imported',
-			'meta_value'	=> 1
-		);
-		
+	$args['post_type'] = ['nav_menu_item','bp-email','elementor_library','wp_navigation', 'wp_global_styles'];
 	$buddyx_demo_post = new WP_Query( $args );		
 	if ( $buddyx_demo_post->have_posts()) {
 		while ( $buddyx_demo_post->have_posts() ){
 			$buddyx_demo_post->the_post();
 			wp_delete_post( get_the_id(), true);
 		}
+		wp_reset_postdata(); // Reset the post data to avoid conflicts
 	}
 
 }
