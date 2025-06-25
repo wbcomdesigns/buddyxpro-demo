@@ -2,8 +2,8 @@
 Contributors: wbcomdesigns  
 Tags: demo importer, one-click import, BuddyX theme, demo content  
 Requires at least: 4.0  
-Tested up to: 6.7.1 
-Stable tag: 3.0.0  
+Tested up to: 6.8.1 
+Stable tag: 3.1.0  
 Requires PHP: 5.6  
 License: GPLv2 or later  
 License URI: https://www.gnu.org/licenses/gpl-2.0.html  
@@ -29,6 +29,14 @@ The plugin supports LearnPress, Tutor LMS, LifterLMS, LearnDash, Dokan, and othe
 Yes, the plugin includes a one-click demo import feature.
 
 == Changelog ==
+
+= 3.1.0 =
+* Fixed: Security vulnerabilities and undefined variable warnings.
+* Updated: Plugin version requirements for bundled dependencies.
+* Removed: LearnDash Course Grid plugin from import plugins list.
+* Added: Option to delete default data after setup.
+* Updated: WooCommerce set as non-required for community demo imports.
+* Fixed: Minor notices during plugin operation.
 
 = 3.0.0 =
 * Added WbCom Essential to demo plugins list.
