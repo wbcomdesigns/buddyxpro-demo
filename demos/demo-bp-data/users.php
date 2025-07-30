@@ -163,3 +163,5 @@ return array(
 		'email' => 'keir@example.com',
 	),
 );
+
+return $users;

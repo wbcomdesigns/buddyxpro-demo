@@ -276,3 +276,5 @@ $groups = array(
 		'enable_forum' => 1,
 	),
 );
+
+return $groups;

@@ -153,3 +153,5 @@ return array(
 		'radio 3',
 	)
 );
+
+return $field_values;

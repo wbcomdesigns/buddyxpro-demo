@@ -124,3 +124,5 @@ $activity = array(
 	'BuddyPress is completely free and open source. Unlike hosted services, BuddyPress allows you to stay in control of your site and create a totally customized, unique experience.',
 	'https://vimeo.com/28926706',
 );
+
+return $activity;
