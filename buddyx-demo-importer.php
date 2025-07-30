@@ -39,9 +39,7 @@ function bdi_file_includes() {
 }
 
 // Include files on init
-if ( ! function_exists( 'bdi_file_includes' ) ) {
-	add_action( 'init', 'bdi_file_includes' );
-}
+add_action( 'init', 'bdi_file_includes' );
 
 // Include One Click Demo Import if not already active
 if ( is_admin() ) {

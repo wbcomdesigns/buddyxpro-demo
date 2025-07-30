@@ -442,6 +442,11 @@ function bdi_import_buddypress_demo_data() {
 	// Count what we have just imported
 	$imported = array();
 
+	// Include required demo functions if not already loaded
+	if ( ! function_exists( 'buddyx_bp_is_imported' ) ) {
+		require_once BDI_PLUGIN_PATH . 'includes/buddyx-demo-functions.php';
+	}
+
 	// Include BuddyPress processing functions
 	include_once BDI_PLUGIN_PATH . '/bp-process.php';
 
