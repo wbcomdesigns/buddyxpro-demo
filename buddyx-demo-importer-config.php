@@ -310,7 +310,7 @@ function bdi_ocdi_register_plugins( $plugins ) {
 			$theme_plugins[] = array(
 				'name'     => 'WooCommerce',
 				'slug'     => 'woocommerce',
-				'required' => false,
+				'required' => true,
 			);
 		}
 
