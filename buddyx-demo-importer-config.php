@@ -305,17 +305,17 @@ function bdi_ocdi_register_plugins( $plugins ) {
 			);
 		}
 
-		// WooCommerce for BuddyPress and BuddyBoss demos
-		if ( isset( $_GET['import'] ) && in_array( $_GET['import'], array( '0', '1' ) ) ) {
+		// WooCommerce for BuddyPress 
+		if ( isset( $_GET['import'] ) && in_array( $_GET['import'], array( '0' ) ) ) {
 			$theme_plugins[] = array(
 				'name'     => 'WooCommerce',
 				'slug'     => 'woocommerce',
-				'required' => true,
+				'required' => false,
 			);
 		}
 
-		// WooCommerce for Dokan demo
-		if ( isset( $_GET['import'] ) && $_GET['import'] === '2' ) {
+		// WooCommerce for Dokan and BuddyBoss demos
+		if ( isset( $_GET['import'] ) && in_array( $_GET['import'], array( '1', '2' ) ) ) {
 			$theme_plugins[] = array(
 				'name'     => 'WooCommerce',
 				'slug'     => 'woocommerce',

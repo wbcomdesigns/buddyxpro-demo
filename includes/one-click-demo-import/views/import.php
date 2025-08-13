@@ -83,20 +83,6 @@ $theme            = wp_get_theme();
 										<?php
 											printf(
 												esc_html__(
-													'The plugins with %1$s are recommended by One Click Demo Import plugin to help you grow your website. They are not required for the %2$s theme to work.',
-													'one-click-demo-import'
-												),
-												'<span class="ocdi-recommended-star"><img src="' . esc_url( OCDI_URL . 'assets/images/icons/star.svg' ) . '" alt="' . esc_attr__( 'Star icon', 'one-click-demo-import' ) . '"></span>',
-												$theme->name
-											);
-										?>
-									</p>
-								</div>
-								<div class="ocdi-content-notice ocdi-content-notice--warning">
-									<p>
-										<?php
-											printf(
-												esc_html__(
 													'Suggestion: Update the permalink structure after the demo import is completed successfully.',
 													'one-click-demo-import'
 												),
