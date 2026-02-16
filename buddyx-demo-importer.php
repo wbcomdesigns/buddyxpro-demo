@@ -116,11 +116,6 @@ function buddyx_demo_plugin_installer( $plugins ) {
 			'required' => false,
 		);
 		$plugins[] = array(
-			'name'     => 'ElementsKit Lite',
-			'slug'     => 'elementskit-lite',
-			'required' => false,
-		);
-		$plugins[] = array(
 			'name'     => 'Tutor LMS',
 			'slug'     => 'tutor',
 			'required' => false,
